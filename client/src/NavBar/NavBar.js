@@ -57,7 +57,12 @@ class NavBar extends Component {
                         </Link>
                       </li>
                       <li>
-                        <a className = "nav-link text-white mx-3" href = "./exhibits.html">Exhibits</a>
+                        <Link
+                         className='nav-link text-white mx-3'
+                         to='/exhibits'
+                        >
+                          Exhibits
+                        </Link>
                       </li>
                       <li>
                         <Link

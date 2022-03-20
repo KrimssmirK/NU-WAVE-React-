@@ -1,0 +1,102 @@
+.main-container {
+    background-color: #474040 !important;
+    height: 250px;
+
+}
+/* div.logo::before{
+    content: url("../img/nu-logo.png") !important;
+} */
+
+footer li {
+    list-style: none !important;
+}
+footer a {
+    text-decoration: none !important;
+    color: #a9a3a3;
+}
+footer a:hover {
+    color:rgb(216, 210, 210);
+}
+.bi {
+    color: #a9a3a3;
+}
+.bi:hover {
+    color:rgb(216, 210, 210);
+}
+
+.myTitle {
+    color: rgb(216, 210, 210);
+}
+.right-footer {
+    height: 80px;
+}
+.myDetail {
+    color: #a9a3a3;
+}
+.footer-copy {
+    font-size: 10px;
+}
+.copy-width {
+    width: 100%;
+}
+.myCopyright {
+    color: #a09b9b;
+}
+.footer-nav {
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    
+    .footer-nav > ul > h6 {
+        margin-left: 30%;
+    }
+    .footer-nav > ul > li {
+        margin-left: 10%;
+    }
+    .logo-footer > img {
+        width: 300px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .main-container {
+        height: 400px ;
+    }
+    .inner-container {
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+    .logo-footer > img {
+        width: 200px;
+    }
+}
+@media (max-width: 576px) {
+    .main-container {
+        height: 400px;
+    }
+    .logo-footer > img {
+        width: 200px;
+    }
+}
+@media (max-width: 576px) {
+    .logo-footer > img {
+        width: 200px;
+    }
+    .footer-nav {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main-container {
+        height: 400px;
+    }
+    /* .socials {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+
+    } */
+}

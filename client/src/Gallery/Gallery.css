@@ -1,0 +1,76 @@
+.Gallery {
+    /* overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0 auto; */
+    font-family: "Arial" !important;
+}
+.gallery-banner {
+    height: 300px;
+    background-image: url('./img/gallery_banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.banner-text-col{
+    margin-top: 4.5em;
+}
+
+.banner-text {
+    transform: translateY(80%);
+    color: #ffffff;   
+    text-align: center;
+}
+.banner-text > h1 {
+    font-size: 50px;
+    padding: 0px;
+    font-weight: bold;
+}
+.banner-text > h6 {
+    font-size: 20px;
+}
+.card{
+    width: 18rem; 
+    padding-bottom: 200px;
+}
+
+
+.exhibit-description {
+    font-family: "Arial";
+}
+
+.target-exhibit-kenji {
+  cursor: pointer;
+}
+
+.target-exhibit-kenji:hover {
+  opacity: 0.5;
+}
+
+.poster-title{
+    font-weight: bolder;
+}
+.row > .shadow {
+    height: 500px;
+    width: 500px;
+    cursor: pointer;
+}
+.poster {
+    border: 3px solid black;
+    cursor: pointer;
+    width: 450px;
+    height: 400px;
+}
+a {
+    text-decoration: none;
+}
+a:link,a:visited,a:hover,a:active {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .col{
+        margin-bottom: 15px;
+    }
+}

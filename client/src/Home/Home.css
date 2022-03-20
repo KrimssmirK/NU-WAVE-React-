@@ -1,0 +1,139 @@
+.Home {
+    overflow-x: hidden;
+    padding: 0 auto;
+    margin: 0 auto;
+    background-color: white;
+}
+/* .carousel-item > img {
+    object-fit: cover;
+    object-position: center;
+} */
+
+.carousel {
+    height: auto;
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+.main-prod-container {
+    background-color: white;
+    /* box-shadow: 2px 6px 5px 0px #a29999; */
+
+}
+.feat-title {
+    color: #000;
+}
+.feat-prod {
+    color: #000;
+}
+
+.card-prod {
+  
+  border-radius: 10%;
+}
+.card-prod > img{
+    height: 150px;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    /* object-fit: cover; */
+}
+.card-innovator > img {
+    height: auto;
+    width: 50%;
+}
+
+/* .prod > .prod-container > img {
+    object-fit: cover;
+    height: 100px;
+    width: 300px;
+}
+.prod-img > img {
+    height: 150px;
+    width: 500px;
+    object-fit: cover;
+
+} */
+ 
+
+.innovator-p {
+    word-break: break-word;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 16px; /* fallback */
+   -webkit-line-clamp: 20; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+.articles {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 400px;
+    background-color: white;
+    /* box-shadow: 2px 6px 5px 0px #a29999; */
+
+}
+.articles > img {
+    max-width: 400px;
+}
+.article-container {
+    box-shadow: 2px 6px 5px 0px #474040;
+
+}
+.article-container > img {
+    max-width: 400px;
+}
+.about-container {
+    background-color: #99761f;
+    box-shadow: 2px 6px 5px 0px #474040;
+
+}
+.about-img {
+    height: 300px;
+}
+
+div.contact {
+    height: 300px;
+    width: 100%;
+    /* background-image: url(../../img/exhibits-banner.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-banner {
+    transform: translateY(150px);
+}
+.contact-banner > button {
+    background-color: transparent;
+}
+@media (min-width:768px) {
+    .vl-innovator {
+        border-right: 1px solid #000;
+    }
+}
+@media (max-width: 992px) {
+    .innovator-p {
+        word-break: break-word;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       display: -webkit-box;
+       line-height: 16px; /* fallback */
+       -webkit-line-clamp: 10; /* number of lines to show */
+       -webkit-box-orient: vertical;
+    }
+    /* .col-sm-6 > img {
+        height: 200px;
+    } */
+    .articles  img {
+        max-width: 250px;
+    }
+    .about-img {
+        height: 300px;
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .carousel {
+        height: auto;
+    }
+}

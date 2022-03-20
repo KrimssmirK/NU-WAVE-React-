@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import './NavBar.css'
 import logo from './img/logo.png'
+import { Link } from 'react-router-dom'
 
 class NavBar extends Component {
   
@@ -48,19 +49,39 @@ class NavBar extends Component {
                   <div className='d-lg-flex justify-content-center'>
                     <ul className = "navbar-nav">
                       <li>
-                        <a className = "nav-link text-white mx-3" href = "./index.html">Home</a>
+                        <Link
+                         className='nav-link text-white mx-3'
+                         to='/'
+                        >
+                          Home
+                        </Link>
                       </li>
                       <li>
                         <a className = "nav-link text-white mx-3" href = "./exhibits.html">Exhibits</a>
                       </li>
                       <li>
-                        <a className = "nav-link text-white mx-3" href = "./gallery.html">Gallery</a>
+                        <Link
+                         className='nav-link text-white mx-3'
+                         to='/gallery'
+                        >
+                          Gallery
+                        </Link>
                       </li>
                       <li>
-                        <a className = "nav-link text-white mx-3" href = "./about.html">About</a>
+                        <Link
+                         className='nav-link text-white mx-3'
+                         to='/about'
+                        >
+                          About
+                        </Link>
                       </li>
                       <li>
-                        <a className = "nav-link text-white mx-3" href = "./contact.html">Contact</a>
+                        <Link
+                         className='nav-link text-white mx-3'
+                         to='/contact'
+                        >
+                          Contact
+                        </Link>
                       </li>
                     </ul>
                   </div> 

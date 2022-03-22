@@ -2,7 +2,7 @@ import fetch from 'isomorphic-fetch'
 
 class Client {
     getExhibits(success) {
-        return fetch('/api/exhibits', {
+        return fetch('https://nu-centie.herokuapp.com/api/exhibits', {
           headers: {
             Accept: 'application/json',
           },
@@ -12,10 +12,11 @@ class Client {
       }
     
       getExhibitImage(exhibitId, success) {
-        return fetch(`/api/exhibit/image/${exhibitId}`, {
+        return fetch(`https://nu-centie.herokuapp.com/api/exhibit/image/${exhibitId}`, {
           headers: {
             Accept: 'application/json',
           },
+          
         }).then(this.checkStatus)
           .then(this.parseJSON)
           .then(success)

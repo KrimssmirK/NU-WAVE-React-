@@ -189,7 +189,7 @@ const Home = () => (
                             <img src="../img/article2.png" alt="" className="py-1"/>
                             
                         </div>
-                        <div class="article-container text-start p-3 mt-5">
+                        <div className="article-container text-start p-3 mt-5">
                             <p >
                                 For the first episode of Brand NU Network’s The EntrepreNUr, let’s meet the young, creative, passionate, and talented movers and shakers of tomorrow!
                                 These groups of young entrepreneurs presented their innovative products at the CentIE Demo Day and out of 241 teams across NU campuses all over the country, these 16 teams stood out with their outstanding ideas.

@@ -134,7 +134,7 @@ const Temp = ({ children }) => (
                   </div>
                   <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" disabled/>
-                    <label claclassNamess="form-check-label" htmlFor="flexCheckChecked">
+                    <label className="form-check-label" htmlFor="flexCheckChecked">
                       3 stars
                     </label>
                   </div>
@@ -146,7 +146,7 @@ const Temp = ({ children }) => (
                   </div>
                   <div class="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" disabled/>
-                    <label class="form-check-label" htmlFor="flexCheckChecked">
+                    <label className="form-check-label" htmlFor="flexCheckChecked">
                       1 star
                     </label>
                   </div>

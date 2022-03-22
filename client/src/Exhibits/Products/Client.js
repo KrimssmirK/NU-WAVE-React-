@@ -5,7 +5,7 @@ class Client {
     this.exhibit_name = sessionStorage.getItem('exhibit_name')
   }
   getProducts(success) {
-    const url = '/api/products/' + this.exhibit_name
+    const url = 'https://nu-centie.herokuapp.com/api/products/' + this.exhibit_name
     return fetch(url, {
       headers: {
         Accept: 'application/json',
@@ -16,7 +16,7 @@ class Client {
   }
 
   getProductMainImage(productID, success) {
-    const url = '/api/product/image/' + productID
+    const url = 'https://nu-centie.herokuapp.com/api/product/image/' + productID
     return fetch(url, {
       headers: {
         Accept: 'application/json',

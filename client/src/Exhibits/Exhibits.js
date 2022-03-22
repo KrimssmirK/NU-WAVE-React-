@@ -26,7 +26,6 @@ class Exhibits extends Component{
     handleEnterExhibit = (exhibit_name, exhibit_description) => {
       sessionStorage.setItem('exhibit_name', exhibit_name);
       sessionStorage.setItem('exhibit_description', exhibit_description);
-      window.location.href='./products.html';
     }
       
     render() {
@@ -104,8 +103,8 @@ class Exhibits extends Component{
     render() {
       const src_of_image = Object.keys(this.state.image).length ? this.convertBinaryImagesToSrc(this.state.image.contentType, this.state.image.data) : ''
       return (
-        <Link path='/exhibits/products' onClick={this.handleEnterExhibit}>
-          <div className="col-lg-4 col-md-3 target-exhibit-kenji">
+        <Link to='/exhibits/products' onClick={this.handleEnterExhibit} className='col-lg-4 col-md-3 target-exhibit-kenji'>
+          <div className="">
           <div className='exhibit-img py-2'>
             <img className='img-fluid' src={src_of_image} alt='not available' />
           </div>

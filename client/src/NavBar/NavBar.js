@@ -17,7 +17,7 @@ class NavBar extends Component {
     return (
       <div className ="container-fluid">
         <nav className = "navbar navbar-expand-lg navbar-dark py-0">
-          <a href = "/index.html"  className ="navbar-brand me-0">
+          <Link to='/' className='navbar-brand me-0'>
             <div className='container'>
               <div className='row'>
                 <div className='col-3 ps-0'>
@@ -30,8 +30,10 @@ class NavBar extends Component {
                   <div className='nav-sub fs-6'>Creative &#38; Technology Hub</div>
                 </div>
               </div>
-            </div>              
-          </a>  
+            </div>  
+          </Link>
+                        
+    
           <button 
             className="navbar navbar-toggler navbar-dark" 
             type="button" 

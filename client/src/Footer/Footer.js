@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import './Footer.css'
 import nuLogo from './img/nu-logo.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => (
     <div>
@@ -50,19 +51,29 @@ const Nav = () => (
                 <h6 className="footer-text myTitle">CONTENTS</h6>
                   <ul className="px-0">
                         <li>
-                            <a href="index.html">HOME</a>
+                          <Link to='/'>
+                            HOME
+                          </Link>
                         </li>
                         <li>
-                            <a href="exhibits.html">EXHIBIT</a>
+                          <Link to='/exhibits'>
+                          EXHIBIT
+                          </Link>
                         </li>
                         <li>
-                            <a href="gallery.html">GALLERY</a>
+                          <Link to='/gallery'>
+                            GALLERY
+                          </Link>
                         </li>
                         <li>
-                            <a href="about.html">ABOUT</a>
+                          <Link to='/about'>
+                            ABOUT
+                          </Link>
                         </li>
                         <li>
-                            <a href="contact.html">CONTACT</a>
+                          <Link to='/contact'>
+                            CONTACT
+                          </Link>
                         </li>
                   </ul>
             </div>

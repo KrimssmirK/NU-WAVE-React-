@@ -6,6 +6,7 @@ import './Exhibits.css'
 import { client } from './Client'
 import sway from './img/sway.png'
 import white from './img/white.png'
+import { Link } from 'react-router-dom'
 
 class Exhibits extends Component{
     state = {
@@ -103,7 +104,8 @@ class Exhibits extends Component{
     render() {
       const src_of_image = Object.keys(this.state.image).length ? this.convertBinaryImagesToSrc(this.state.image.contentType, this.state.image.data) : ''
       return (
-        <div className="col-lg-4 col-md-3 target-exhibit-kenji" onClick={this.handleEnterExhibit}>
+        <Link path='/exhibits/products' onClick={this.handleEnterExhibit}>
+          <div className="col-lg-4 col-md-3 target-exhibit-kenji">
           <div className='exhibit-img py-2'>
             <img className='img-fluid' src={src_of_image} alt='not available' />
           </div>
@@ -112,6 +114,8 @@ class Exhibits extends Component{
             <h6>{this.props.description}</h6>
           </div>
         </div>
+        </Link>
+        
       );
     }
   }

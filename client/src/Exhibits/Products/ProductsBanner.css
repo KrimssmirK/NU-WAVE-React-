@@ -1,0 +1,32 @@
+.prod-banner {
+    height: 300px;
+    /* background-image: url(../img/exhibit1.jpg); */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .banner-text {
+    transform: translateY(80%);
+    color: #FFFFFF;
+    font-family: "Arial" !important;
+  }
+  .banner-text > h1 {
+    font-size: 50px;
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+  }
+  .banner-text > h6 {
+    font-size: 20px;
+  }
+
+  @media (max-width: 576px) {
+    .banner-text > h1 {
+      font-size: 40px;
+      margin: 0px;
+      padding: 0px;
+    }
+    .banner-text > p {
+      font-size: 10px;
+    }
+}

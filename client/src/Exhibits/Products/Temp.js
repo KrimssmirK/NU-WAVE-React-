@@ -144,7 +144,7 @@ const Temp = ({ children }) => (
                       2 stars
                     </label>
                   </div>
-                  <div class="form-check">
+                  <div className="form-check">
                     <input className="form-check-input" type="checkbox" value="" id="flexCheckChecked" disabled/>
                     <label className="form-check-label" htmlFor="flexCheckChecked">
                       1 star

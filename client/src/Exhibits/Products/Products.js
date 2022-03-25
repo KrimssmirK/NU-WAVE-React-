@@ -7,6 +7,7 @@ import ProductsBanner from './ProductsBanner'
 import Search from './Search'
 import Temp from './Temp'
 import { client } from './Client'
+import { Link } from 'react-router-dom'
 
 const ProductsContainer = () => (
   <div className='ProductContainer'>
@@ -24,7 +25,14 @@ class Products extends Component {
     }
   
     componentDidMount() {
-      this.loadProductsFromServer()
+      this.interval = setTimeout(() => {
+        this.loadProductsFromServer()
+      }, 1000)
+      
+    }
+
+    componentWillUnmount() {
+      clearInterval(this.interval)
     }
   
     loadProductsFromServer = () => {
@@ -35,7 +43,6 @@ class Products extends Component {
     
     handleClickView = (product_id) => {
       this.storeProductName(product_id)
-      window.location.href = './product.html'
     }
   
     storeProductName = (product_id) => {
@@ -73,7 +80,14 @@ class Products extends Component {
     }
   
     componentDidMount() {
-      this.loadProductMainImageFromServer()
+      this.interval = setTimeout(() => {
+        this.loadProductMainImageFromServer()
+      }, 1000)
+      
+    }
+
+    componentWillUnmount() {
+      clearInterval(this.interval)
     }
   
     loadProductMainImageFromServer = () => {
@@ -100,7 +114,9 @@ class Products extends Component {
           </div>
           <h4 className="prod-title">{this.props.product_name}</h4>
           <p className="prod-description px-3">{this.props.description}</p>
-          <button onClick={this.handleClickView} className='btn mt-2 mb-3'>View</button>
+          <Link to='/exhibits/products/product' onClick={this.handleClickView}>
+            <button  className='btn mt-2 mb-3'>View</button>
+          </Link>
         </div>
       );
     }

@@ -10,16 +10,19 @@ import { Link } from 'react-router-dom'
 
 class Exhibits extends Component{
     state = {
+      isFetched: false,
       exhibits: [],
     }
   
     componentDidMount() {
-      this.loadExhibitsFromServer()
+      this.interval = setTimeout(() => {
+        this.loadExhibitsFromServer()
+      }, 1000)
     }
   
     loadExhibitsFromServer = () => {
       client.getExhibits((serverExhibits) => {
-        this.setState({ exhibits: serverExhibits })
+        this.setState({ exhibits: serverExhibits, isFetched: true })
       })
     }
   

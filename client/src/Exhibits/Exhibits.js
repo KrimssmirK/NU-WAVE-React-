@@ -4,9 +4,11 @@ import 'bootstrap/dist/js/bootstrap.bundle'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import './Exhibits.css'
 import { client } from './Client'
-import sway from './img/sway.png'
+
 import white from './img/white.png'
 import { Link } from 'react-router-dom'
+
+import Sway from './Sway'
 
 class Exhibits extends Component{
     state = {
@@ -45,21 +47,7 @@ class Exhibits extends Component{
         <div className='Exhibits'>
           <div className='row g-4'>
           {exhibits}
-          <div className="col-lg-4 col-md-3 target-exhibit-kenji">
-            <a href="https://sway.office.com/DZ96lKDqnJulnCUu?ref=Link" target="_blank">
-              <div className='exhibit-img py-2'>
-                <img className='img-fluid' src={sway} alt='not available' />
-              </div>
-              <div className="exhibit-description py-3">
-                <h4 className="ex-title">
-                  1st NU - Philippines Virtual Exhibit
-                  of Entrepreneurial Mind and
-                  Technopreneurship
-                </h4>
-                <h6>Past exhibit</h6>
-              </div>
-            </a>
-          </div>
+          <Sway />
           <div className="col-lg-4 col-md-3 target-exhibit-kenji" onClick={this.handleArchivedExhibit}>
           <div className='exhibit-img py-2'>
           </div>

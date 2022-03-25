@@ -1,7 +1,4 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle'
-import 'bootstrap-icons/font/bootstrap-icons.css'
 import './About.css'
 import photo1 from './img/photo1.png'
 import photo4 from './img/photo4.png'

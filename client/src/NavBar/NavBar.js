@@ -1,7 +1,4 @@
 import { Component } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle'
-import 'bootstrap-icons/font/bootstrap-icons.css'
 import './NavBar.css'
 import logo from './img/logo.png'
 import { Link } from 'react-router-dom'

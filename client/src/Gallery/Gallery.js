@@ -1,7 +1,5 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle'
-import 'bootstrap-icons/font/bootstrap-icons.css'
+
 import './Gallery.css'
 import temporary from './img/temporary.jpg'
 import temporary2 from './img/temporary2.jpg'

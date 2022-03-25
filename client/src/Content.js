@@ -14,8 +14,8 @@ const Content = () => (
     <Routes>
       <Route exact path='/' element={<Home />} />
       <Route exact path='/exhibits' element={<Exhibits />} /> 
-      <Route exact path='/exhibits/products' element={<ProductsContainer/ >} />
-      <Route exact path='/exhibits/products/product' element={<Product/ >} />
+      <Route exact path='/exhibits/products' element={<ProductsContainer />} />
+      <Route exact path='/exhibits/products/product' element={<Product />} />
       <Route exact path='/gallery' element={<Gallery />} /> 
       <Route exact path='/about' element={<About />} /> 
       <Route exact path='/contact' element={<Contact />} />

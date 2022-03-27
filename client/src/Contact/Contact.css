@@ -23,9 +23,9 @@
     padding: 0px;
     font-weight: bold;
 }
-.Contact .banner-text > h6 {
+/* .Contact .banner-text > h6 {
     font-size: 20px;
-}
+} */
 
 .Contact .card-body > p {
     margin-bottom: 0%;
@@ -45,7 +45,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     }
-    .Contact .line-animate::before {
+    /* .Contact .line-animate::before {
     content: "";
     position: absolute;
     top: 0;
@@ -70,7 +70,7 @@
         left: 100%;
     }
     
-    }
+    } */
 
 
 

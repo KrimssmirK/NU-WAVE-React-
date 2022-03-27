@@ -1,43 +1,43 @@
 .Contact {
     font-family: "Arial" !important;
 }
-.exhibits-banner {
+.Contact .exhibits-banner {
     height: 300px;
     background-image: url(./img/exhibits-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.banner-text-col{
+.Contact .banner-text-col{
     margin-top: 4.5em;
 }
 
-.banner-text {
+.Contact .banner-text {
     transform: translateY(80%);
     color: #FFFFFF;   
     text-align: center;
    
 }
-.banner-text > h1 {
+.Contact .banner-text > h1 {
     font-size: 50px;
     padding: 0px;
     font-weight: bold;
 }
-.banner-text > h6 {
+/* .Contact .banner-text > h6 {
     font-size: 20px;
-}
+} */
 
-.card-body > p {
+.Contact .card-body > p {
     margin-bottom: 0%;
 }
-.btn {
+.Contact .btn {
     background-color: #FFB800;
     color: #35408E;
     font-weight: bold;
     outline: none;
     border: none;
   }
-  .line-animate {
+  .Contact .line-animate {
     width: 400px;
     height: 2px;
     background: #000000;
@@ -45,7 +45,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     }
-    .line-animate::before {
+    /* .Contact .line-animate::before {
     content: "";
     position: absolute;
     top: 0;
@@ -70,7 +70,7 @@
         left: 100%;
     }
     
-    }
+    } */
 
 
 
@@ -80,8 +80,7 @@
     [class*="col-"] {
         width: 100%;
       }
-
-    .col-6 img{
+      .Contact .col-6 img{
         display: none;
     }
   }

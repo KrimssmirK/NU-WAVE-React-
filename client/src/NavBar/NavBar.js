@@ -12,7 +12,7 @@ class NavBar extends Component {
   render() {
     const cartColor = { color: '#35408E' }
     return (
-      <div className ="container-fluid">
+      <div className ="Navbar container-fluid">
         <nav className = "navbar navbar-expand-lg navbar-dark py-0">
           <Link to='/' className='navbar-brand me-0'>
             <div className='container'>

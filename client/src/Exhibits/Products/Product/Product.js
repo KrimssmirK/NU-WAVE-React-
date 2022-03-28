@@ -60,7 +60,7 @@ class ProductDashboard extends Component {
       }
       if (Object.keys(this.state.product).length) {
         return (
-          <div>
+          <div className="Product">
             <BreadCrumb product_name={productDetail.product_name} />
             <section className="py-3">
               <div className="container prod-container">

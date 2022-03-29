@@ -1,11 +1,8 @@
 import fetch from 'isomorphic-fetch'
 
 class Client {
-  constructor() {
-    this.productID = sessionStorage.getItem('product_id')
-  }
-  getProductDetail(success) {
-    const url = `https://nu-centie.herokuapp.com/api/product/detail/${this.productID}`
+  getProductDetail(productID, success) {
+    const url = `http://localhost:3000/api/product/detail/${productID}`
     return fetch(url, {
       headers: {
         Accept: 'application/json',
@@ -16,7 +13,7 @@ class Client {
   }
 
   getProductImages(success) {
-    const url = `https://nu-centie.herokuapp.com/api/product/images/${this.productID}`
+    const url = `http://localhost:3000/api/product/images/${this.productID}`
     return fetch(url, {
       headers: {
         Accept: 'application/json',
@@ -27,7 +24,7 @@ class Client {
   }
 
   getRatingsInfo(success) {
-    const url = `https://nu-centie.herokuapp.com/api/product/ratings/guest/${this.productID}`
+    const url = `http://localhost:3000/api/product/ratings/guest/${this.productID}`
     return fetch(url, {
       headers: {
         Accept: 'application/json',
@@ -38,7 +35,7 @@ class Client {
   }
 
   rateProduct(star_number, success) {
-    const url = `https://nu-centie.herokuapp.com/api/product/ratings/guest/${this.productID}`
+    const url = `http://localhost:3000/api/product/ratings/guest/${this.productID}`
     return fetch(url, {
       method: 'post',
       body: JSON.stringify({ guest_rate: star_number }),
@@ -52,7 +49,7 @@ class Client {
   }
 
   getViews(success) {
-    const url = `https://nu-centie.herokuapp.com/api/product/views/${this.productID}`
+    const url = `http://localhost:3000/api/product/views/${this.productID}`
     return fetch(url, {
       headers: {
         Accept: 'application/json',
@@ -63,7 +60,7 @@ class Client {
   }
 
   getLikes(success) {
-    const url = `https://nu-centie.herokuapp.com/api/product/like/guest/${this.productID}`
+    const url = `http://localhost:3000/api/product/like/guest/${this.productID}`
     return fetch(url, {
       headers: {
         Accept: 'application/json',
@@ -74,7 +71,7 @@ class Client {
   }
 
   updateLikes(hasLiked) {
-    const url = hasLiked ? `https://nu-centie.herokuapp.com/api/product/like/${this.productID}` : `https://nu-centie.herokuapp.com/api/product/unlike/${this.productID}`
+    const url = hasLiked ? `http://localhost:3000/api/product/like/${this.productID}` : `https://nu-centie.herokuapp.com/api/product/unlike/${this.productID}`
     return fetch(url, {
       method: 'post',
       headers: {

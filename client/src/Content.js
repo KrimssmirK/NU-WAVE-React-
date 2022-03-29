@@ -1,21 +1,25 @@
 import { Route, Routes } from 'react-router-dom'
 
 // pages
-import Contact from './Contact/Contact'
-import About from './About/About'
-import Gallery from './Gallery/Gallery'
 import Home from './Home/Home'
-import Exhibits from './Exhibits/Exhibits'
-import ProductsContainer from './Exhibits/Products/Products'
-import Product from './Exhibits/Products/Product/Product'
+
+import ExhibitsContainer from './Exhibits/ExhibitsContainer'
+import ExhibitContainer from './Exhibits/Exhibit/ExhibitContainer'
+import ProductContainer from './Exhibits/Exhibit/Product/ProductContainer'
+
+import Gallery from './Gallery/Gallery'
+
+import About from './About/About'
+
+import Contact from './Contact/Contact'
 
 const Content = () => (
   <div className='Content'>
     <Routes>
       <Route exact path='/' element={<Home />} />
-      <Route exact path='/exhibits' element={<Exhibits />} /> 
-      <Route exact path='/exhibits/products' element={<ProductsContainer />} />
-      <Route exact path='/exhibits/products/product' element={<Product />} />
+      <Route exact path='/exhibits' element={<ExhibitsContainer />} /> 
+      <Route exact path='/exhibit/:exhibitID' element={<ExhibitContainer />} />
+      <Route exact path='/product/:productID' element={<ProductContainer />} />
       <Route exact path='/gallery' element={<Gallery />} /> 
       <Route exact path='/about' element={<About />} /> 
       <Route exact path='/contact' element={<Contact />} />

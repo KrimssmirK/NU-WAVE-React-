@@ -2,7 +2,7 @@ import fetch from 'isomorphic-fetch'
 
 class Client {
     getExhibits(success) {
-        return fetch('https://nu-centie.herokuapp.com/api/exhibits', {
+        return fetch('http://localhost:3000/api/exhibits', {
           headers: {
             Accept: 'application/json',
           },
@@ -12,7 +12,7 @@ class Client {
       }
     
       getExhibitImage(exhibitId, success) {
-        return fetch(`https://nu-centie.herokuapp.com/api/exhibit/image/${exhibitId}`, {
+        return fetch(`http://localhost:3000/api/exhibit/image/${exhibitId}`, {
           headers: {
             Accept: 'application/json',
           },

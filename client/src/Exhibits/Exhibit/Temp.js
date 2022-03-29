@@ -1,5 +1,4 @@
-import React from 'react'
-import './Temp.css'
+import './style/Temp.css'
 
 const Temp = ({ children }) => (
   <div className='Temp'>
@@ -160,9 +159,9 @@ const Temp = ({ children }) => (
             </div>
            
           
-          <div className="col-md-12 col-lg-10">
+          {/* <div className="col-md-12 col-lg-10">
             {children}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

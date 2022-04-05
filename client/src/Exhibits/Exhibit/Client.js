@@ -1,11 +1,9 @@
 import fetch from 'isomorphic-fetch'
 
 class Client {
-  constructor() {
-    this.exhibit_name = sessionStorage.getItem('exhibit_name')
-  }
-  getProducts(success) {
-    const url = 'https://nu-centie.herokuapp.com/api/products/' + this.exhibit_name
+  getProducts(exhibitID, success) {
+    console.log(exhibitID)
+    const url = 'http://localhost:3000/api/products/' + exhibitID
     return fetch(url, {
       headers: {
         Accept: 'application/json',
@@ -16,7 +14,7 @@ class Client {
   }
 
   getProductMainImage(productID, success) {
-    const url = 'https://nu-centie.herokuapp.com/api/product/image/' + productID
+    const url = 'http://localhost:3000/api/product/image/' + productID
     return fetch(url, {
       headers: {
         Accept: 'application/json',

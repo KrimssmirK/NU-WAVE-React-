@@ -1,4 +1,4 @@
-body {
+.Nabvar {
     overflow-x: hidden;
     margin: 0 auto;
     padding: 0 auto;
@@ -57,7 +57,7 @@ body {
     .navbar-title {
       margin-left: 15px;
     }
-    .vl {
+    .Navbar .vl {
       border-right: 2px solid #fff;
       height: 50%;
     }
@@ -71,7 +71,7 @@ body {
     .navbar-nav a:hover:after { 
       background: transparent !important;
     }
-    .vl {
+    .Navbar.vl {
       border-right: 2px solid #35408E;
       height: 50%;
     }

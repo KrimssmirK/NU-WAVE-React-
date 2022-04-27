@@ -26,7 +26,7 @@ class NavBar extends Component {
                   <img src={logo} alt='logo'/>
                 </div>
              
-                <ul className="navbar-nav">
+                <ul className="navbar-nav me-auto">
                   <li className="nav-item">
                     <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} aria-current="page" to="/">Home</NavLink>
                   </li>
@@ -46,10 +46,10 @@ class NavBar extends Component {
                     <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")}to="/contact">Contact</NavLink>
                   </li> */}
                 </ul>
-                   <div className="signIn px-4 py-1" style={{color: 'black', zIndex: 1}}>
-                      <button className="btn rounded-pill border-white text-light" style={{color: 'black', zIndex: 1}}>Sign up</button>
-                      <Link to="#" className="ms-3 px-3 border-start text-decoration-none text-light" style={{color: 'black', zIndex: 1}}>Sign in</Link>
-                    </div>
+                <div className="signIn py-1" style={{color: 'black', zIndex: 1}}>
+                  {/* <button className="btn rounded-pill border-white text-light" style={{color: 'black', zIndex: 1}}>Sign up</button> */}
+                  <Link to="#" className="text-decoration-none" style={{color: 'black', zIndex: 1}}>Sign in</Link>
+                </div>
               </div>
             </div>
           </nav>
@@ -65,10 +65,10 @@ class NavBar extends Component {
         </div>
 
 
-          <div className="container py-3">
+          {/* <div className="container py-3">
             <div className="logo">
             </div>
-          </div>
+          </div> */}
           
          
           {/* <img src={wave} alt="wave" className="w-100 d-none d-sm-block"/> */}

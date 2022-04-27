@@ -65,6 +65,7 @@
 .row h5 {
     font-size: 36px;
 }
+
 .Home .logo-about {
     height: 10rem;
 }
@@ -199,4 +200,5 @@ div.contact {
     .carousel {
         height: auto;
     }
+   
 }

@@ -26,7 +26,7 @@ import paper from './img/NEWSPAPER.SVG'
 export default function Home() {
     return (
         <div className="Home">
-         <img src={bag} alt="bag" className="products"/>   
+         <img src={bag} alt="bag" className="products d-none d-sm-block"/>   
         {/* carsouel banner */}
             {/* <section className="pb-5">
                 <div id="centie_carousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -75,7 +75,7 @@ export default function Home() {
             </section>
             {/* Todo: for now, featured innovator and articles are in the same container; it should be separated */}
             {/* featured innovator and articles */}
-         <img src={paper} alt="bag" className="paper"/>   
+         <img src={paper} alt="bag" className="paper d-none d-sm-block"/>   
 
             <section className="articles-section p-5">
                 <div className="text-center mb-5">

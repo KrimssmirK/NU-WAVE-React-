@@ -1,6 +1,6 @@
 import React from 'react'
 import about_bg from '../img/bgwave.svg'
-import logo from '../img/LOGO_WAVE2.svg'
+import logo from '../img/LOGO_WAVE_NEW.svg'
 function about() {
   return (
     <div className="container-fluid px-0">
@@ -10,7 +10,7 @@ function about() {
                <div className="row about-us">
                    <div className="col-md-6 px-0">
                        <div className=" p-5">
-                            <h5 className="text-center text-light">About us</h5>
+                            <h5 className="text-center text-light about-title">About us</h5>
                             <p className="p-5 text-center text-light">
                                 The Center for Innovation and Entrepreneurship 
                                 envisioned to be an inclusive, realistic, 

@@ -1,6 +1,8 @@
 const Contact = () => (
   <div className='Contact'>
-    <div className='title'>
+    <div className='d-flex justify-content-center'>
+      <div>
+      <div className='title'>
       <h1 className='h5'>Contact Us</h1>
     </div>
     <div className='content'>
@@ -11,6 +13,9 @@ const Contact = () => (
       </p>
     </div>
     <i className="bi bi-telephone-fill" style={{ color: 'black' }}></i><span> +632 8712-1900</span>
+      </div>
+    </div>
+    
   </div> 
 )
 

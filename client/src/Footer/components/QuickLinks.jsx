@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom'
 
 const QuickLinks = () => (
     <div className='QuickLinks'>
-      <div className='title'>
+    <div className='d-flex justify-content-center'>
+        <div>
+        <div className='title'>
         <h1 className='h5'>Quick Links</h1>
       </div>
       <div className='content'>
@@ -39,6 +41,9 @@ const QuickLinks = () => (
           </li>
         </ul>
       </div>
+        </div>
+    </div>
+      
     </div> 
   )
   

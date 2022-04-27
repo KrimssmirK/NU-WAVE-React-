@@ -14,7 +14,7 @@ import About from './About/About'
 import Contact from './Contact/Contact'
 
 const Content = () => (
-  <div className='Content'>
+  <div className='Content' style={{overflow: 'hidden'}}>
     <Routes>
       <Route exact path='/' element={<Home />} />
       <Route exact path='/exhibits' element={<ExhibitsContainer />} /> 

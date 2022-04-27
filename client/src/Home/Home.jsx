@@ -1,17 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
 
 import CarouselItem from './components/carousel_item'
 import FeaturedProduct from './components/featured_products'
-import FeaturedInnovator from './components/featured_innovators'
+import About from './components/about'
 
+import FeaturedArticles from './components/featured_articles'
+
+import axios from 'axios'
+import bag from './img/Sbag.svg'
+import paper from './img/NEWSPAPER.SVG'
+
+// const fetchBannerData = async () => {
+//     return await axios.get('https://nu-centie.herokuapp.com/sabater')
+//     .then(({data}) => {
+//         console.log(data)
+//         return data;
+//     })
+//     .catch(err => {
+//         console.log(err)
+//     })
+//   }
 
 
 export default function Home() {
     return (
         <div className="Home">
+         <img src={bag} alt="bag" className="products"/>   
         {/* carsouel banner */}
-            <section className="pb-5">
+            {/* <section className="pb-5">
                 <div id="centie_carousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#centie_carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -30,26 +47,46 @@ export default function Home() {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
-            </section>
+            </section> */}
         {/* featured products */}
-            <section className="p-md-5 py-5">
+            <section className="prod-section p-md-5 py-5">
+            {/* <div className="products">
+                
+            </div> */}
             <div className="text-center mb-5">
                 <span className="fs-1 text-center border-warning border-2 border-bottom">Featured Products</span>
             </div>
                 <div className="container">
                     <div className="row g-5">
-                        <FeaturedProduct />
+                        <div className="col-md-6 ps-sm-5 pe-0">
+                            <div className="pt-sm-5 mt-sm-5 ps-sm-5 ms-sm-5">
+                                <h4 className="pb-5">“Center for Innovation and Entrepreneurship”</h4>
+                                <p className="lh-lg">
+                                    aims to produce successful startups participating from both the NU community and external organizations 
+                                    or groups who are interested in developing innovative business ideas and creative output.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <FeaturedProduct />
+                        </div>
                     </div>
                 </div>
             </section>
             {/* Todo: for now, featured innovator and articles are in the same container; it should be separated */}
             {/* featured innovator and articles */}
-            <section className="p-5">
-                <div className="container">
-                    <div className="row gy-5">
-                        <FeaturedInnovator />
-                    </div>
+         <img src={paper} alt="bag" className="paper"/>   
+
+            <section className="articles-section p-5">
+                <div className="text-center mb-5">
+                    <span className="fs-1 text-center border-warning border-2 border-bottom">Featured Articles</span>
                 </div>
+                <FeaturedArticles />
+                
+            </section>
+
+            <section className="pt-5">
+                <About />
             </section>
         </div>
         

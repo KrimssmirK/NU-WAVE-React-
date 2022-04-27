@@ -7,12 +7,12 @@
     content: url("../img/nu-logo.png") !important;
 } */
 
-footer li {
+.Footer li {
     list-style: none !important;
 }
-footer a {
+.Footer  a {
     text-decoration: none !important;
-    color: #a9a3a3;
+    color: #fff;
 }
 footer a:hover {
     color:rgb(216, 210, 210);
@@ -23,7 +23,9 @@ footer a:hover {
 .bi:hover {
     color:rgb(216, 210, 210);
 }
-
+.Footer .bi-facebook {
+    height: 20px;
+}
 .myTitle {
     color: rgb(216, 210, 210);
 }
@@ -42,9 +44,9 @@ footer a:hover {
 .myCopyright {
     color: #a09b9b;
 }
-.footer-nav {
+/* .footer-nav {
     margin-top: 10px;
-}
+} */
 
 @media (min-width: 768px) {
     

@@ -1,8 +1,12 @@
 .Home {
-    overflow-x: hidden;
-    padding: 0 auto;
+    overflow: hidden !important;
     margin: 0 auto;
-    background-color: white;
+    padding: 0 auto;
+    max-width: 100% !important;
+    
+   
+    
+
 }
 /* .carousel-item > img {
     object-fit: cover;
@@ -21,6 +25,20 @@
     height: 150px;
 }
 
+.products {
+    height: 30rem; 
+    transform: rotate(20deg) translate(-30%, 30%);
+    position: absolute;
+    z-index: -1;
+}
+.paper {
+    height: 30rem; 
+    transform: rotate(-20deg) translateY(50%);
+    position: absolute;
+    z-index: -1;
+    right: -15rem;
+}
+
 .Home .prod-img {
     word-break: break-word;
     overflow: hidden;
@@ -30,7 +48,26 @@
     -webkit-line-clamp: 9; /* number of lines to show */
     -webkit-box-orient: vertical;
 }
-
+.img-articles {
+    height: 100px
+}
+.about-us {
+    background-image: url(./img/bgwave.svg);
+    height: 40vh;
+    object-fit: center
+}
+/* .bg-about{
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    transform: scaleY(.5);
+} */
+.row h5 {
+    font-size: 36px;
+}
+.Home .logo-about {
+    height: 10rem;
+}
 .Home .innovator-container {
     width: fit-content !important;
     background-color: blue !important;
@@ -54,7 +91,7 @@
     overflow: scroll;
     overflow-x: hidden;
     height: 400px;
-    background-color: white;
+    background-color: transparent;
     height: 555px;
 }
 

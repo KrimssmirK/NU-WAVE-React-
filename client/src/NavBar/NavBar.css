@@ -1,10 +1,54 @@
-.Nabvar {
-    overflow-x: hidden;
+.Navbar {
+    overflow: hidden;
     margin: 0 auto;
     padding: 0 auto;
     font-family: "Arial" !important;
+    background-color: #49495B;
+    height: fit-content;
+   
   }
-  .container-fluid {       
+ 
+  .Navbar .account {
+    background-color: #414950;
+    height: 50px;
+  }
+  .account img {
+    height: 3rem;
+    mix-blend-mode: lighten;
+    transform: scaleX(-1)
+  }
+  .Navbar .signIn {
+    width: fit-content;
+  }
+  .Navbar .col {
+    height: fit-content;
+  }
+  .account .container {
+    background-color: #49495B;
+  }
+  .Navbar .logo {
+    background-image: url(./img/LOGO_WAVE2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #49495B;
+    height: 8rem
+  }
+  .Navbar .navbar {
+    background-color: #49495B;
+  }
+  .Navbar li {
+    padding-right: 10px;
+  }
+  .Navbar li > a {
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .Navbar .active {
+    color: yellow;
+  }
+ 
+
+  /* .container-fluid {       
     background-color: #35408E;   
   }
   .navbar-nav a {
@@ -15,10 +59,7 @@
     font-size: small;
   }
   
-  /* .n-logo > img {
-    width: 300px;
-  } */
-  
+
   .navbar-nav a:after {    
     background: none repeat scroll 0 0 transparent !important;
     bottom: 0 !important;
@@ -51,9 +92,7 @@
   
   
   @media (min-width: 1092px) {
-    /* .navbar-brand {
-      font-size: large !important;
-    } */
+   
     .navbar-title {
       margin-left: 15px;
     }
@@ -76,11 +115,7 @@
       height: 50%;
     }
   }
-  @media (max-width: 576px) {
-    /* .nav-title {
-      font-size: 10px;
-    } */
-  }
+
   @media (max-width: 392px) {
     .nu-title {
       margin-left: 5px;
@@ -90,7 +125,7 @@
       font-size: 10px !important;
     }
     
-  }
+  } */
   /* IMPORTANT NOTES GUYS */
   /* to not override existing design */
   /* h3#issueHeader {

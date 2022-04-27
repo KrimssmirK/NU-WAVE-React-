@@ -58,6 +58,8 @@
 
   .Navbar .wave-logo {
     z-index: 1;
+    transform: scaleX(-1);
+    margin-right: 10px;
   }
 
  

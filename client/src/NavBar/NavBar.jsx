@@ -13,16 +13,16 @@ class NavBar extends Component {
   render() {
     // const cartColor = { color: '#35408E' }
     return (
-      <div className="Navbar container-fluid px-0">
+      <div className="Navbar container-fluid">
         <div className="account row">
         
-        <nav className="navbar navbar-expand-md navbar-dark" style={{ backgroundColor: 'white'}}>
-            <div className="container-fluid">
+        <nav className="navbar navbar-expand-md navbar-light" style={{ backgroundColor: 'white'}}>
+            <div className="container">
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="navbarNav">
-                <div className='wave-logo'>
+                <div className='wave-logo me-auto'>
                   <img src={logo} alt='logo'/>
                 </div>
              
@@ -46,9 +46,16 @@ class NavBar extends Component {
                     <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")}to="/contact">Contact</NavLink>
                   </li> */}
                 </ul>
-                <div className="signIn py-1" style={{color: 'black', zIndex: 1}}>
+                <div className="signIn d-flex" style={{color: 'black'}}>
                   {/* <button className="btn rounded-pill border-white text-light" style={{color: 'black', zIndex: 1}}>Sign up</button> */}
-                  <Link to="#" className="text-decoration-none" style={{color: 'black', zIndex: 1}}>Sign in</Link>
+                  <div className="pe-2 py-2">
+                    <i className="bi bi-bag pe-2"></i>
+                    <span>0</span>
+                  </div>
+                  
+                  {/* <Link to="#" className="text-decoration-none" style={{color: 'black', zIndex: 1}}> */}
+                    <button className="btn btn-primary">Sign in</button>
+                  {/* </Link> */}
                 </div>
               </div>
             </div>
@@ -56,12 +63,12 @@ class NavBar extends Component {
           {/* <div className="col col-sm-9">
             <img src={account_bg} alt="wave" className="d-none d-sm-block w-100"/>
           </div> */}
-          <div className="col col-sm-3 justify-content-end mx-0">
+          {/* <div className="col col-sm-3 justify-content-end mx-0"> */}
             {/* <div className="signIn px-4 py-1">
               <button className="btn rounded-pill border-white text-light">Sign up</button>
               <Link to="#" className="ms-3 px-3 border-start text-decoration-none text-light">Sign in</Link>
             </div> */}
-          </div>
+          {/* </div> */}
         </div>
 
 

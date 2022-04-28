@@ -3,16 +3,8 @@
     margin: 0 auto;
     padding: 0 auto;
     font-family: "Arial" !important;
-    background-color: #49495B;
     height: fit-content;
-   
-  }
-
-
- 
-  .Navbar .account {
-    background-color: #414950;
-    height: 50px;
+    
   }
   .account img {
     height: 3rem;
@@ -25,9 +17,7 @@
   .Navbar .col {
     height: fit-content;
   }
-  .account .container {
-    background-color: #49495B;
-  }
+  
   /* .Navbar .logo {
     background-image: url(./img/LOGO_WAVE2.svg);
     background-repeat: no-repeat;
@@ -55,14 +45,21 @@
   .Navbar .navbar-dark .navbar-nav .nav-link:hover {
     color: rgb(60, 54, 54);
   }
-
-  .Navbar .wave-logo {
-    z-index: 1;
-    transform: scaleX(-1);
-    margin-right: 10px;
+  .Navbar .active {
+    color: blue;
   }
-
- 
+  .Navbar .wave-logo {
+    /* z-index: 1; */
+    transform: scaleX(-1);
+    /* margin-right: 10px; */
+  }
+/* 
+@media (min-width: 992px) {
+  .Navbar {
+    position: fixed;
+    width: 100%;
+  }
+} */
 
   /* .container-fluid {       
     background-color: #35408E;   

@@ -5,13 +5,30 @@
     max-width: 100% !important;
     
    
-    
+    background-color: #F2F2F2;    
 
 }
 /* .carousel-item > img {
     object-fit: cover;
     object-position: center;
 } */
+.Home .hero {
+    background-image: url(./img/hero.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    object-fit:center;
+    background-position: center;
+    background-size: cover;
+}
+
+.Home .innovator {
+    background-image: url(./img/ino1.png);
+    background-repeat: no-repeat;
+    object-fit:center;
+    background-position: center; 
+    background-size: cover;
+    height: 25rem;
+}
 
 .Home .carousel {
     height: auto;

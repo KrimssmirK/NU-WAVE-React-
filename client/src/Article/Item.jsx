@@ -8,7 +8,7 @@ const Item = ({ title }) => (
       </div>
       <div className='description'>
         <p className='mb-0' style={{color: 'red'}}>NU WAVE LATEST</p>
-        <h3>{ title }</h3> 
+        <h3>IT’S Women’s Month! Let us celebrate Women!</h3> 
         <p className='fw-light'>Late Night with Dr. Ria Liza featuring up-close and personal with The Philippine Association of University Women PAUW - NATIONAL.</p>
         <div className='d-flex'>
           <p className='fw-bold me-5'>By Ria Liza Centeno</p>

@@ -35,9 +35,9 @@
     font-size: 20px;
     text-decoration: none;
   }
-  .Navbar .active {
+  /* .Navbar .active {
     color: #49495B;
-  }
+  } */
 
   .Navbar .navbar-dark .navbar-nav .nav-link {
     color: black;
@@ -45,9 +45,10 @@
   .Navbar .navbar-dark .navbar-nav .nav-link:hover {
     color: rgb(60, 54, 54);
   }
-  .Navbar .active {
+  /* .Navbar .active {
     color: blue;
-  }
+    text-align: justify;
+  } */
   .Navbar .wave-logo {
     /* z-index: 1; */
     transform: scaleX(-1);

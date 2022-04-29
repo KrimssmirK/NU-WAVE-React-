@@ -27,11 +27,16 @@ const Container = () => (
     <hr/>
     <h2 className='text-center fs-1'>The Latest</h2>
     <hr/>
-    {
+    {/* {
       data.map((data) => (
         <Item title={data.title} />
       ))
-    }
+    } */}
+    <Item />
+    <Item />
+    <Item />
+    <Item />
+    <Item />
     <div className='d-flex justify-content-center'>
       <Button />
     </div>

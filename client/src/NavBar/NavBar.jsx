@@ -31,20 +31,23 @@ class NavBar extends Component {
                     <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} aria-current="page" to="/">Home</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} to="/exhibits">Exhibit</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} to="/products">Products</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} to="/gallery">Gallery</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} to="/exhibits">Exhibits</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")}to="/article">Article</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} to="/innovators">Innovators</NavLink>
                   </li>
-                  {/* <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} to="/about">About</NavLink>
+                  <li className="nav-item">
+                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")}to="/article">Articles</NavLink>
                   </li>
                   <li className="nav-item">
                     <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")}to="/contact">Contact</NavLink>
-                  </li> */}
+                  </li>
+                  <li className="nav-item">
+                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")}to="/about">About Us</NavLink>
+                  </li>
                 </ul>
                 <div className="signIn d-flex" style={{color: 'black'}}>
                   {/* <button className="btn rounded-pill border-white text-light" style={{color: 'black', zIndex: 1}}>Sign up</button> */}

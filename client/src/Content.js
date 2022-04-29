@@ -13,6 +13,8 @@ import About from './About/About'
 
 import Contact from './Contact/Contact'
 
+import Article from './Article/Container'
+
 const Content = () => (
   <div className='Content' style={{overflow: 'hidden'}}>
     <Routes>
@@ -21,6 +23,7 @@ const Content = () => (
       <Route exact path='/exhibit/:exhibitID' element={<ExhibitContainer />} />
       <Route exact path='/product/:productID' element={<ProductContainer />} />
       <Route exact path='/gallery' element={<Gallery />} /> 
+      <Route exact path='/article' element={<Article />} />
       <Route exact path='/about' element={<About />} /> 
       <Route exact path='/contact' element={<Contact />} />
     </Routes>

@@ -1,6 +1,6 @@
 const About = () => (
   <div className='About'>
-    <div className='d-flex justify-content-center'>
+    <div className='d-flex justify-content-evenly'>
       <div>
         <div className='title'>
         <h1 className='h5'>About</h1>

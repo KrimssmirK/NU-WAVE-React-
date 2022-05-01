@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import './Home.css'
+import Table from './table'
+import AboutUs from './About.jsx'
 
 import CarouselItem from './components/carousel_item'
 import FeaturedProduct from './components/featured_products'
@@ -12,6 +14,9 @@ import bag from './img/Sbag.svg'
 import paper from './img/NEWSPAPER.SVG'
 import about from './img/about-banner.png'
 import article1 from './img/article1.png'
+import waved from './img/waveD.svg'
+import FeaturedP from './feautredProduct.jsx'
+import Navbar from '../NavBar/NavBar.jsx'
 
 
 // const fetchBannerData = async () => {
@@ -31,165 +36,21 @@ export default function Home() {
         <div className="Home">
             <div className="hero p-5 text-light">
                 <div className="container p-md-5">
-                    <h6>
-                        ECommerce website
-                    </h6> 
-                    <h1>
-                        Welcome to <br/>
-                        NU Wave
+                    <h1 className="text-lg-start  textH">
+                        Creative + Technology
                     </h1>
-                    <h4>
-                        The creative and technology hub of National University
-                    </h4>
-                </div>
+                </div>  
             </div>
-            <div className="mx-auto services p-5">
-                <div className="text-center">
-                    <h6 className="text-primary">Our Services</h6>
-                    <h1 className="fw-bold">
-                        Lorem ipsum dolor sit amet, <br/> consectetur adipiscing elit. 
-                    </h1>
-                    <h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas <br/>
-                        interdum, orci at euismod dapibus, massa ante pharetra tellus. 
-                    </h5>
-                </div>
+            <img src ={waved} style={{height: 100 + 'px', backgroundRepeat:'no-repeat',objectFit:'center' }}/>
+            <div className="container-lg" style={{marginTop: 5 +'%', marginBottom: 5 + '%'}}>
+                <Table />
             </div>
-            <div className="container cards p-5">
-                <div className="row g-5">
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card text-center">
-                            <i className="bi bi-briefcase-fill fs-1" style={{color: '#0768E9'}}></i>    
-                            <div className="card-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum, orci at euismod dapibus, massa ante pharetra tellus. 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card text-center">
-                            <i className="bi bi-cart4 fs-1" style={{color: '#0768E9'}}></i>    
-                            <div className="card-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum, orci at euismod dapibus, massa ante pharetra tellus. 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card text-center">
-                            <i className="bi bi-book-fill fs-1" style={{color: '#0768E9'}}></i>    
-                            <div className="card-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum, orci at euismod dapibus, massa ante pharetra tellus. 
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-6 col-lg-3">
-                        <div className="card text-center">
-                            <i className="bi bi-mortarboard-fill fs-1" style={{color: '#0768E9'}}></i>    
-                            <div className="card-body">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum, orci at euismod dapibus, massa ante pharetra tellus. 
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="container-fluid bgBlue " style={{marginTop: 10 +'%', marginBottom: 5 + '%'}}>
+            <FeaturedP />
             </div>
-            <section className="p-5">
-                <div className="container">
-                    <div className="row g-5">
-                        <div className="col-md-6">
-                            <div className="p-5">
-                                <h6>
-                                    FEATURED INNOVATOR
-                                </h6>
-                                <h1>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, beatae.
-                                </h1>
-                                <h6>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nam sint nisi tenetur eum dolores fugiat mollitia atque, voluptatem alias.
-                                </h6>
-                            </div>
-                            
-                        </div>
-                        <div className="col-md-6">
-                            {/* <img src={innovator} alt="innovator"  className="img-fluid w-100"/> */}
-                            <div className="innovator"></div>
-                        </div>
-                        <div className="col-md-6">
-                            {/* <img src={innovator} alt="innovator"  className="img-fluid w-100"/> */}
-                            <div className="innovator"></div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="p-5">
-                                <h6>
-                                    FEATURED INNOVATOR
-                                </h6>
-                                <h1>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, beatae.
-                                </h1>
-                                <h6>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nam sint nisi tenetur eum dolores fugiat mollitia atque, voluptatem alias.
-                                </h6>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-            <section className="p-5">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 px-0">
-                            <img src={about} alt="about" className="img-fluid w-100"/>
-                        </div>
-                        <div className="col-md-6 px-0 bg-primary">
-                            <div className="p-5 text-light">
-                                <h1>Center for Innovation and Entrepreneurship</h1>
-                                <h6>Aims to produce successful startups participating from both the NU community and external organizations or groups who are interested in developing innovative business ideas and creative output. </h6>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="p-5">
-                <div className="text-center p-5">
-                    <h6 className="text-primary">OUR ARTICLES</h6>
-                    <h1>
-                    Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit. 
-                    </h1>
-                </div>
-                <div className="container">
-                    <div className="row g-5">
-                        <div className="col-md-4">
-                            <div className="card">
-                                <img src={article1} alt="articles" />
-                                <div className="card-body">
-                                    <span className="text-secondary">2022.4.22</span>
-                                    <h5>General Assembly</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="card">
-                                <img src={article1} alt="articles" />
-                                <div className="card-body">
-                                    <span className="text-secondary">2022.4.22</span>
-                                    <h5>General Assembly</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className="card">
-                                <img src={article1} alt="articles" />
-                                <div className="card-body">
-                                    <span className="text-secondary">2022.4.22</span>
-                                    <h5>General Assembly</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
+            <div className='mb-5 pb-5'>
+            <AboutUs />
+            </div>
          {/* <img src={bag} alt="bag" className="products d-none d-sm-block"/>    */}
         {/* carsouel banner */}
             {/* <section className="pb-5">

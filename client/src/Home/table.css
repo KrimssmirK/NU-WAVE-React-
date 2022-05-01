@@ -1,0 +1,10 @@
+
+.carousel-cont{
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-item img{
+    width: 10px;
+    height: 10px;
+}

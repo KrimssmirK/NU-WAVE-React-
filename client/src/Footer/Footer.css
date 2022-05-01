@@ -1,7 +1,14 @@
 .Footer {
-  background-color: white;
-  margin: 100px;
+  background-image: url(./img/bgfooter.svg);
+  background-repeat: no-repeat;
+  object-fit: center;
+  height: 36vh;
+  background-size: cover;
+  background-color: #F2F2F2;    
+
 }
+
+
 
 
 

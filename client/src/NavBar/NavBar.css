@@ -45,10 +45,10 @@
   .Navbar .navbar-dark .navbar-nav .nav-link:hover {
     color: rgb(60, 54, 54);
   }
-  /* .Navbar .active {
+  .Navbar .active {
     color: blue;
     text-align: justify;
-  } */
+  }
   .Navbar .wave-logo {
     /* z-index: 1; */
     transform: scaleX(-1);

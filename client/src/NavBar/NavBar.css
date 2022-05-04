@@ -2,9 +2,8 @@
     overflow: hidden;
     margin: 0 auto;
     padding: 0 auto;
-    font-family: "Arial" !important;
+    font-family: "Arial Black" !important;
     height: fit-content;
-    
   }
   .account img {
     height: 3rem;
@@ -26,14 +25,19 @@
     height: 8rem
   } */
   .Navbar .navbar {
-    background-color: #49495B;
+    background-color: #112886;
   }
   .Navbar li {
     padding-right: 10px;
   }
   .Navbar li > a {
-    font-size: 20px;
+    font-size: 1rem;
     text-decoration: none;
+    color: #fff !important;
+
+  }
+  .Navbar .active {
+    color: yellow !important;
   }
   /* .Navbar .active {
     color: #49495B;

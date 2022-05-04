@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import './NavBar.css'
-import logo from './img/logo.png'
+import logo from './img/new-Logo.png'
 import { NavLink, Link } from 'react-router-dom'
 import account_bg from './img/account-bg.png';
 import wave from './img/New_Wave.svg'
@@ -13,45 +13,44 @@ class NavBar extends Component {
   render() {
     // const cartColor = { color: '#35408E' }
     return (
-      <div className="Navbar container-fluid">
-        <div className="account row">
+      <div className="Navbar container-fluid px-0">
+        <div className="account">
         
-        <nav className="navbar navbar-expand-md navbar-light" style={{ backgroundColor: 'white'}}>
+        <nav className="navbar navbar-expand-lg navbar-dark">
             <div className="container">
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="navbarNav">
-                <div className='wave-logo me-auto'>
+                <div className='wave-logo me-auto text-center'>
                   <img src={logo} alt='logo'/>
                 </div>
-             
                 <ul className="navbar-nav me-auto">
                   <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} aria-current="page" to="/">Home</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")} aria-current="page" to="/">Home</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} to="/products">Products</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")} to="/products">Products</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} to="/exhibits">Exhibits</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")} to="/exhibits">Exhibits</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")} to="/innovators">Innovators</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")} to="/innovators">Innovators</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")}to="/article">Articles</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}to="/article">Articles</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")}to="/contact">Contact</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}to="/contact">Contact</NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "active" : "nav-link")}to="/about">About Us</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}to="/about">About Us</NavLink>
                   </li>
                 </ul>
                 <div className="signIn d-flex" style={{color: 'black'}}>
                   {/* <button className="btn rounded-pill border-white text-light" style={{color: 'black', zIndex: 1}}>Sign up</button> */}
-                  <div className="pe-2 py-2">
+                  <div className="pe-2 py-2 text-light">
                     <i className="bi bi-bag pe-2"></i>
                     <span>0</span>
                   </div>

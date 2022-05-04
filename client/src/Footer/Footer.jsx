@@ -5,25 +5,37 @@ import Contact from './components/Contact'
 import About from './components/About'
 import QuickLinks from './components/QuickLinks'
 
-import NUWAVE from './img/NUWAVE.png'
+import NUWAVE from './img/new-Logo.png'
 
 const Footer = () => (
-  <div className="Footer ">
-    <div className='container d-flex align-items-center'>
-    <div className='row' style={{marginTop: 12 + '%'}}>
-      <div className='col-2'>
-        <img src={NUWAVE} style={{width: 130+ '%'}}/>
+  <div className="Footer p-5">
+    <div className='container'>
+      <div className='row'>
+        <div className='col-md-2'>
+          <img src={NUWAVE} alt="" className="img-fluid"/>
+        </div>
+        <div className='col-md-4'>
+          <QuickLinks />
+        </div>
+        <div className='col-md-2'>
+          <h1 className='h5 d-flex justify-content-center' style={{color: 'white'}}>Contact Us</h1>
+          <Contact />
+        </div>
+        <div className='col-md-4'>
+        <h1 className='h5 d-flex justify-content-center' style={{color: 'white'}}>SignUp with our NewLetter</h1>
+        </div>
       </div>
-      <div className='col-4'>
-        <QuickLinks />
+      <div className="row pt-5 text-center">
+        <div className="col-md-4">
+          <span className='text-light'>NU WIZARDS CIRCLE WEB DEV</span>
+        </div>
+        <div className="col-md-4">
+          <span className='text-light'>National University - Manila</span>
+        </div>
+        <div className="col-md-4">
+          <Link to='' className='text-light'>Copyright and Disclaimer</Link>
+        </div>
       </div>
-      <div className='col-2'>
-      <h1 className='h5' style={{fontFamily:'Futura', color: 'white'}}>Contact Us</h1>
-      </div>
-      <div className='col-4'>
-      <h1 className='h5' style={{fontFamily:'Futura', color: 'white'}}>SignUp with our NewLetter</h1>
-      </div>
-    </div>
     </div>
   </div>
 )

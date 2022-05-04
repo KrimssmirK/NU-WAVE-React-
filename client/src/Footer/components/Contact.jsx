@@ -1,5 +1,5 @@
 const Contact = () => (
-  <div className='Contact text-light d-flex justify-content-center'>
+  <div className='Contact d-flex justify-content-center'>
     <div className=''>
       <div className='text-center'>
         <div>
@@ -9,7 +9,7 @@ const Contact = () => (
             551 M.F. Jhocson St. Sampaloc, Manila, PH 1008
           </p>
         </div>
-        <i className="bi bi-telephone-fill text-center" style={{ color: 'white' }}></i><span className='text-center'> +632 8712-1900</span>
+        <i className="bi bi-telephone-fill text-center" style={{ color: 'black' }}></i><span className='text-center'> +632 8712-1900</span>
       </div>
     </div>
     

@@ -34,8 +34,8 @@ import FeaturedP from './feautredProduct.jsx'
 export default function Home() {
     return (
         <div className="Home">
-            <div className="hero text-light" >
-                <img src={banner} alt="" style={{width: '460', height: '345'}}/>
+            <div className="hero" >
+                <img src={banner} alt="" style={{width: '460', height: '345'}} className='img-fluid'/>
                 {/* <div className="container p-md-5">
                     <h1 className="textH">
                         Creative + Technology
@@ -50,7 +50,8 @@ export default function Home() {
                 <h1>Featured Products</h1>
             <FeaturedP />
             </div>
-            <div className='mb-5 pb-5'>
+            <div className='container py-5'>
+                <h1>About us</h1>
             <AboutUs />
             </div>
          {/* <img src={bag} alt="bag" className="products d-none d-sm-block"/>    */}

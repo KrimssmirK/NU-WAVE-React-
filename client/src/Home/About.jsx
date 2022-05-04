@@ -12,11 +12,12 @@ const AboutUs = ({ AboutUs }) => (
     <div>
       <div class="container">
         <div class="row">
-            <div class="col">
-                <img src ={Logo} alt=""/>
-            </div>
-            <div class="col d-flex align-items-center " style={{fontFamily: 'Futura', fontSize: 20 + 'px'}}>
+            
+            <div class="col-md-6 d-flex align-items-center " style={{fontSize: 20 + 'px'}}>
                 <p>The Center for Innovation and Entrepreneurship envisioned to be an inclusive, realistic, and collaborative community achieving all its strategic objectives.</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <img src ={Logo} alt="" className="img-fluid"/>
             </div>
         </div>
         </div>

@@ -15,15 +15,14 @@ const FeaturedP = ({ FeaturedP }) => (
                     <div className="card" style={{width: 25 + 'rem'}}>
                         <img src={prod1} className="card-img-top" alt="..."></img>
                             <div className="card-body">
-                                <p className="card-text text-center" style={{fontFamily:'Futura'}}><h2>Micro</h2></p>
-                            </div>
+                                <h6 className="card-text text-center">Micro</h6>                          </div>
                     </div>
                 </div>
                 <div className="col-md-4 d-flex justify-content-center">
                 <div className="card" style={{width: 25 + 'rem'}}>
                         <img src={prod2} className="card-img-top" alt="..."></img>
                             <div className="card-body">
-                                <p className="card-text text-center" style={{fontFamily:'Futura'}}><h2>Care Kit</h2></p>
+                                <h6 className="card-text text-center">Lip Care Kit</h6>
                             </div>
                     </div>
                 </div>
@@ -31,7 +30,7 @@ const FeaturedP = ({ FeaturedP }) => (
                 <div className="card" style={{width: 25 + 'rem'}}>
                         <img src={prod3} className="card-img-top" alt="..."></img>
                             <div className="card-body">
-                                <p className="card-text text-center" style={{fontFamily:'Futura'}}><h2>Care Kit</h2></p>
+                                <h6 className="card-text text-center">Living Jewerly</h6>
                             </div>
                     </div>
                 </div>

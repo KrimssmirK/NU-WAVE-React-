@@ -35,7 +35,7 @@ export default function Home() {
     return (
         <div className="Home">
             <div className="hero" >
-                <img src={banner} alt="" style={{width: '460', height: '345'}} className='img-fluid'/>
+                <img src={banner} alt=""  className='img-fluid'/>
                 {/* <div className="container p-md-5">
                     <h1 className="textH">
                         Creative + Technology

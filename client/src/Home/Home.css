@@ -26,8 +26,9 @@
 
 } */
 .Home .hero img {
-    height: 80vh;
+    max-height: 80vh;
     width: 100%;
+   
 }
 .textH{
     font-family:  futura;
@@ -129,9 +130,9 @@
     height: 555px;
 }
 
-@media (min-width: 767px) {
-    .Home .vl {
-        border-right: 1px solid #FDDA0D;
+@media (min-width: 592px) {
+    .Home .hero img {
+        height: 100vh;
     }
 }
 

@@ -10,7 +10,7 @@ import NUWAVE from './img/new-Logo.png'
 const Footer = () => (
   <div className="Footer p-5">
     <div className='container'>
-      <div className='row'>
+      <div className='row gy-5'>
         <div className='col-md-2'>
           <img src={NUWAVE} alt="" className="img-fluid"/>
         </div>
@@ -22,10 +22,10 @@ const Footer = () => (
           <Contact />
         </div>
         <div className='col-md-4'>
-        <h1 className='h5 d-flex justify-content-center' style={{color: 'black'}}>SignUp with our NewLetter</h1>
+        <h1 className='h5 text-center' style={{color: 'black'}}>SignUp to our Newsletter</h1>
         </div>
       </div>
-      <div className="row pt-5 text-center">
+      <div className="row gy-3 pt-5 text-center">
         <div className="col-md-4">
           <span className=''>NU WIZARDS CIRCLE WEB DEV</span>
         </div>

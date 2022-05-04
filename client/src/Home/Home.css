@@ -18,14 +18,13 @@
 } */
 
 
-.Home .hero {
-    /* background-image: url(./img/creative-banner.png);
-    background-repeat: no-repeat; */
+/* .Home .hero {
     height: 80vh;
-    /* object-fit:center; */
-    /* background-position: center;
-    background-size: cover; */
-}
+    background: no-repeat center;
+    background-size: cover;
+    background-image: url(./img/creative-banner.png);
+
+} */
 .Home .hero img {
     height: 80vh;
     width: 100%;

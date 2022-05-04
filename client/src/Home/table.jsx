@@ -8,14 +8,14 @@ import "./table.css";
 const Table = ({ table }) => (
   <>
     {/**TWO COLUMNS */}
-    {/* <div className="container d-flex justify-content-center">
+    <div className="container d-flex justify-content-center p-5">
       <div className="container">
-        <div className="row gy-5"> */}
-          {/* <div className="col-lg-6 d-flex align-items-center">
-            <img src={textArticle} style={{ width: 35 + "rem" }} alt="" />
-          </div> */}
-
-          {/* <div className="d-flex align-items-center carousel-lead"> */}
+        <div className="row gy-5">
+          <div className="col-lg-6 d-flex align-items-center">
+            <h1>Featured Articles</h1>
+          </div>
+          
+          <div className="col-lg-6 d-flex align-items-center carousel-lead">
             <div className="container-fluid carousel-cont px-0">
               <div
                 id="carouselExampleControls"
@@ -60,10 +60,10 @@ const Table = ({ table }) => (
                 </button>
               </div>
             </div>
-          {/* </div> */}
-        {/* </div>
+          </div>
+        </div>
       </div>
-    </div> */}
+    </div>
   </>
 );
 

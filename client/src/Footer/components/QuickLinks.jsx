@@ -6,7 +6,7 @@ const QuickLinks = () => (
     <div className='d-flex justify-content-center'>
         <div>
         <div className='title'>
-        <h1 className='h5' style={{fontFamily:'Futura', color: 'white'}}>Quick Links</h1>
+        <h1 className='h5' style={{color: 'white'}}>Quick Links</h1>
       </div>
       <div className='content'>
         <ul style={{ listStyleType: 'none', padding: 0}}>

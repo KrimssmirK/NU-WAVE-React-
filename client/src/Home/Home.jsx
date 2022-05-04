@@ -15,8 +15,8 @@ import paper from './img/NEWSPAPER.SVG'
 import about from './img/about-banner.png'
 import article1 from './img/article1.png'
 import waved from './img/waveD.svg'
+import banner from './img/creative-banner.png'
 import FeaturedP from './feautredProduct.jsx'
-import Navbar from '../NavBar/NavBar.jsx'
 
 
 // const fetchBannerData = async () => {
@@ -34,18 +34,20 @@ import Navbar from '../NavBar/NavBar.jsx'
 export default function Home() {
     return (
         <div className="Home">
-            <div className="hero p-5 text-light">
-                <div className="container p-md-5">
-                    <h1 className="text-lg-start  textH">
+            <div className="hero text-light" >
+                <img src={banner} alt="" style={{width: '460', height: '345'}}/>
+                {/* <div className="container p-md-5">
+                    <h1 className="textH">
                         Creative + Technology
                     </h1>
-                </div>  
+                </div>   */}
             </div>
-            <img src ={waved} style={{height: 100 + 'px', backgroundRepeat:'no-repeat',objectFit:'center' }}/>
-            <div className="container-lg" style={{marginTop: 5 +'%', marginBottom: 5 + '%'}}>
+            {/* <img src={waved} alt="" className="img-fluid banner"/> */}
+            <div className="container-fluid px-0">
                 <Table />
             </div>
-            <div className="container-fluid bgBlue " style={{marginTop: 10 +'%', marginBottom: 5 + '%'}}>
+            <div className="container" style={{marginTop: 10 +'%', marginBottom: 5 + '%'}}>
+                <h1>Featured Products</h1>
             <FeaturedP />
             </div>
             <div className='mb-5 pb-5'>

@@ -6,12 +6,12 @@ import textProduct from './img/textProduct.svg'
 import './Home.css'
 const FeaturedP = ({ FeaturedP }) => (
     <div className='container'>
-        <div className='container d-flex justify-content-center'>
+        {/* <div className='container d-flex justify-content-center'>
             <img src ={textProduct} className='mt-5 pt-5'style={{width: 50 + '%'}}/>
-        </div>
+        </div> */}
         <div className="container mt-5">
              <div className="row">
-                <div className="col d-flex justify-content-start">
+                <div className="col-md-4 d-flex justify-content-start">
                     <div className="card" style={{width: 25 + 'rem'}}>
                         <img src={prod1} className="card-img-top" alt="..."></img>
                             <div className="card-body">
@@ -19,7 +19,7 @@ const FeaturedP = ({ FeaturedP }) => (
                             </div>
                     </div>
                 </div>
-                <div className="col d-flex justify-content-center">
+                <div className="col-md-4 d-flex justify-content-center">
                 <div className="card" style={{width: 25 + 'rem'}}>
                         <img src={prod2} className="card-img-top" alt="..."></img>
                             <div className="card-body">
@@ -27,7 +27,7 @@ const FeaturedP = ({ FeaturedP }) => (
                             </div>
                     </div>
                 </div>
-                <div className="col d-flex justify-content-end">
+                <div className="col-md-4 d-flex justify-content-end">
                 <div className="card" style={{width: 25 + 'rem'}}>
                         <img src={prod3} className="card-img-top" alt="..."></img>
                             <div className="card-body">

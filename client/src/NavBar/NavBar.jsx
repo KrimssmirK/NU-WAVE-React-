@@ -13,77 +13,119 @@ class NavBar extends Component {
   render() {
     // const cartColor = { color: '#35408E' }
     return (
-      <div className="Navbar container-fluid px-0">
-        <div className="account">
-        
-        <nav className="navbar navbar-expand-lg navbar-dark">
-            <div className="container">
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div className="Navbar container-fluid px-0 pb-5">
+        <nav className="navbar navbar-expand-lg navbar-light navbar-fixed fixed-top">
+            <div className="container-fluid px-0 px-md-5">
+              <button className="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
-              <div className="collapse navbar-collapse" id="navbarNav">
-                <div className='wave-logo me-auto text-center'>
-                  <img src={logo} alt='logo'/>
-                </div>
-                <ul className="navbar-nav me-auto">
+              <div className='mx-auto'>
+                  <img src={logo} alt='logo' className="wave-logo img-fluid"/>
+              </div>
+              <div className="collapse navbar-collapse ps-3" id="navbarNav">
+                
+                <ul className="navbar-nav mx-auto">
                   <li className="nav-item">
                     <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")} aria-current="page" to="/">Home</NavLink>
                   </li>
-                  <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")} to="/products">Products</NavLink>
+                  <li className="nav-item dropdown">
+                    <NavLink 
+                      className={({isActive}) => (isActive ? "nav-link active dropdown-toggle" : "nav-link dropdown-toggle")} 
+                      id="navbarDropdown" 
+                      role="button" 
+                      data-bs-toggle="dropdown" 
+                      aria-expanded="false" 
+                      to="/article">
+                      Articles
+                    </NavLink>
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><NavLink className="dropdown-item bg-light" to="/">Featured</NavLink></li>
+                      <li><NavLink className="dropdown-item bg-light" to="/">Latest</NavLink></li>
+                    </ul>
+                  </li>
+                  
+                  <li className="nav-item dropdown">
+                    <NavLink 
+                      className={({isActive}) => (isActive ? "nav-link active dropdown-toggle" : "nav-link dropdown-toggle")} 
+                      id="navbarDropdown" 
+                      role="button" 
+                      data-bs-toggle="dropdown" 
+                      aria-expanded="false" 
+                      to="/exhibit">
+                     Exhibit
+                    </NavLink>
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><NavLink className="dropdown-item bg-light" to="/">Recent</NavLink></li>
+                      <li><NavLink className="dropdown-item bg-light" to="/">Upcoming</NavLink></li>
+                      <li><NavLink className="dropdown-item bg-light" to="/">Galleries</NavLink></li>
+                    </ul>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <NavLink 
+                      className={({isActive}) => (isActive ? "nav-link active dropdown-toggle" : "nav-link dropdown-toggle")} 
+                      id="navbarDropdown" 
+                      role="button" 
+                      data-bs-toggle="dropdown" 
+                      aria-expanded="false" 
+                      to="/innovators">
+                     Innovators
+                    </NavLink>
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><NavLink className="dropdown-item bg-light" to="/">Featured</NavLink></li>
+                      <li><NavLink className="dropdown-item bg-light" to="/">Newest</NavLink></li>
+                    </ul>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <NavLink 
+                      className={({isActive}) => (isActive ? "nav-link active dropdown-toggle" : "nav-link dropdown-toggle")} 
+                      id="navbarDropdown" 
+                      role="button" 
+                      data-bs-toggle="dropdown" 
+                      aria-expanded="false" 
+                      to="/products">
+                      Products
+                    </NavLink>
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><NavLink className="dropdown-item bg-light" to="/">Categories</NavLink></li>
+                      <li><NavLink className="dropdown-item bg-light" to="/">New</NavLink></li>
+                    </ul>
                   </li>
                   <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")} to="/exhibits">Exhibits</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")} to="/innovators">Innovators</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}to="/article">Articles</NavLink>
+                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}to="/about">About</NavLink>
                   </li>
                   <li className="nav-item">
                     <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}to="/contact">Contact</NavLink>
                   </li>
-                  <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}to="/about">About Us</NavLink>
+                  <li className="nav-item dropdown">
+                    <NavLink 
+                      className={({isActive}) => (isActive ? "nav-link active dropdown-toggle" : "nav-link dropdown-toggle")} 
+                      id="navbarDropdown" 
+                      role="button" 
+                      data-bs-toggle="dropdown" 
+                      aria-expanded="false" 
+                      to="/labs">
+                     Labs
+                    </NavLink>
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><NavLink className="dropdown-item bg-light" to="/">Innovaiton</NavLink></li>
+                      <li><NavLink className="dropdown-item bg-light" to="/">Incubation</NavLink></li>
+                    </ul>
                   </li>
                 </ul>
                 <div className="signIn d-flex" style={{color: 'black'}}>
                   {/* <button className="btn rounded-pill border-white text-light" style={{color: 'black', zIndex: 1}}>Sign up</button> */}
-                  <div className="pe-2 py-2 text-light">
+                  <div className="pe-2 py-2 text-dark">
                     <i className="bi bi-bag pe-2"></i>
                     <span>0</span>
                   </div>
                   
                   {/* <Link to="#" className="text-decoration-none" style={{color: 'black', zIndex: 1}}> */}
-                    <button className="btn btn-primary">Sign in</button>
+                    <button className="btn text-light" style={{backgroundColor: "blue"}}>Sign in</button>
                   {/* </Link> */}
                 </div>
               </div>
             </div>
           </nav>
-          {/* <div className="col col-sm-9">
-            <img src={account_bg} alt="wave" className="d-none d-sm-block w-100"/>
-          </div> */}
-          {/* <div className="col col-sm-3 justify-content-end mx-0"> */}
-            {/* <div className="signIn px-4 py-1">
-              <button className="btn rounded-pill border-white text-light">Sign up</button>
-              <Link to="#" className="ms-3 px-3 border-start text-decoration-none text-light">Sign in</Link>
-            </div> */}
-          {/* </div> */}
-        </div>
-
-
-          {/* <div className="container py-3">
-            <div className="logo">
-            </div>
-          </div> */}
-          
-         
-          {/* <img src={wave} alt="wave" className="w-100 d-none d-sm-block"/> */}
-
-        
-
       </div>
       // <div className ="Navbar container-fluid">
       //   <nav className = "navbar navbar-expand-lg navbar-dark py-0">

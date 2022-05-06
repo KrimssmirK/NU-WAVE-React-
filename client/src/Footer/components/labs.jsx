@@ -7,19 +7,19 @@ const QuickLinks = () => (
       <div>
         <div className="title">
           <h1 className="h5" style={{ color: "black" }}>
-            About
+            Labs
           </h1>
         </div>
         <div className="content px-3">
           <ul style={{ listStyleType: "none", padding: 0 }}>
             <li>
               <Link to="#" style={{ color: "black", textDecoration: "none" }}>
-                CENTIE
+                Innovation
               </Link>
             </li>
             <li>
               <Link to="#" style={{ color: "black", textDecoration: "none" }}>
-                National University
+                Incubation
               </Link>
             </li>
           </ul>

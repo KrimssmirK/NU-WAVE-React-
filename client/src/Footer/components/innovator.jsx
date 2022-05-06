@@ -5,21 +5,21 @@ const QuickLinks = () => (
   <div className="QuickLinks">
     <div className="d-flex justify-content-center">
       <div>
-        <div className="title">
+      <div className="title">
           <h1 className="h5" style={{ color: "black" }}>
-            About
+            Innovators
           </h1>
         </div>
         <div className="content px-3">
           <ul style={{ listStyleType: "none", padding: 0 }}>
             <li>
               <Link to="#" style={{ color: "black", textDecoration: "none" }}>
-                CENTIE
+                Featured
               </Link>
             </li>
             <li>
               <Link to="#" style={{ color: "black", textDecoration: "none" }}>
-                National University
+                Newest
               </Link>
             </li>
           </ul>

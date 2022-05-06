@@ -26,7 +26,7 @@
 
 } */
 .Home .hero img {
-    max-height: 80vh;
+    max-height: auto;
     width: 100%;
    
 }
@@ -128,12 +128,6 @@
     height: 400px;
     background-color: transparent;
     height: 555px;
-}
-
-@media (min-width: 592px) {
-    .Home .hero img {
-        height: 100vh;
-    }
 }
 
 /* .feat-title {

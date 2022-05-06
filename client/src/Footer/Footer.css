@@ -4,8 +4,22 @@
   object-fit: center; */
   /* height: 36vh; */
   /* background-size: cover; */
-  background-color: #eeeeee;    
-
+  background-color: #f4f4f4;    
+}
+.Footer .col-md-4 {
+  height: fit-content;
+}
+.Footer .col-md-2 {
+  height: fit-content;
+}
+.Footer .li a :hover {
+  color:  blue;
+}
+.Footer .content i {
+  cursor: pointer;
+}
+.Footer .credits img {
+  max-height: 5rem;
 }
 
 

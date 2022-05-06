@@ -1,22 +1,9 @@
-import React, { useEffect } from 'react'
 import './Home.css'
-import Table from './table'
-import AboutUs from './About.jsx'
-
-import CarouselItem from './components/carousel_item'
-import FeaturedProduct from './components/featured_products'
-import About from './components/about'
-
-import FeaturedArticles from './components/featured_articles'
-
-import axios from 'axios'
-import bag from './img/Sbag.svg'
-import paper from './img/NEWSPAPER.SVG'
-import about from './img/about-banner.png'
-import article1 from './img/article1.png'
-import waved from './img/waveD.svg'
 import banner from './img/creative-banner.png'
+
+import Table from './table'
 import FeaturedP from './feautredProduct.jsx'
+import FeatInnovator from './components/featured_innovator'
 
 
 // const fetchBannerData = async () => {
@@ -34,8 +21,8 @@ import FeaturedP from './feautredProduct.jsx'
 export default function Home() {
     return (
         <div className="Home">
-            <div className="hero" >
-                <img src={banner} alt=""  className='img-fluid'/>
+            <div className="hero">
+                <img src={banner} alt="creative and technology"  className='img-fluid'/>
                 {/* <div className="container p-md-5">
                     <h1 className="textH">
                         Creative + Technology
@@ -43,17 +30,44 @@ export default function Home() {
                 </div>   */}
             </div>
             {/* <img src={waved} alt="" className="img-fluid banner"/> */}
-            <div className="container-fluid px-0">
+            <section className="container pt-5">
+                <h1>Featured Articles</h1>
+                <p className="p-2">
+                This is what we are up to. Be updated on what's new on our projects, activities and achievements.
+                </p>
                 <Table />
-            </div>
-            <div className="container" style={{marginTop: 10 +'%', marginBottom: 5 + '%'}}>
+            </section>
+            <section className="container" style={{marginTop: 10 +'%', marginBottom: 5 + '%'}}>
                 <h1>Featured Products</h1>
-            <FeaturedP />
-            </div>
-            <div className='container py-5'>
-                <h1>About us</h1>
-            <AboutUs />
-            </div>
+                <p className="p-2">
+                Ideas, Innovations, Inventions, Creations....
+                <br />
+                Browse through and take interest in the fruits of our innovator's relentless efforts to compete in the modern world.
+                </p>
+                <FeaturedP />
+            </section>
+            <section className='container py-5'>
+                <div className="container">
+                    <div className="row g-5">
+                        <div className="col-md-5">
+                            <div className="mx-auto">
+                                <h1>Featured Innovator</h1>
+                                <p className="p-2">
+                                    Meet and get to know one of the innovators that had contributed greatly to make NU WAVE a tsunami.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div className="col-md-7">
+                            <FeatInnovator />
+                        </div>
+                    </div>
+                </div>
+                <div className="text-center p-5">
+                    <button className="btn text-light" style={{backgroundColor: 'blue'}}>View more innovators</button>
+                </div>
+                   
+            </section>
          {/* <img src={bag} alt="bag" className="products d-none d-sm-block"/>    */}
         {/* carsouel banner */}
             {/* <section className="pb-5">

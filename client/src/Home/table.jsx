@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom'
+
+
 import Article1 from "./img/Article 1.png";
 import Article2 from "./img/Article 2.png";
 import Article3 from "./img/Article 3.png";
@@ -7,12 +10,28 @@ import "./table.css";
 
 const Table = ({ table }) => (
   <>
-    {/**TWO COLUMNS */}
-    <div className="container d-flex justify-content-center p-5">
+    
+    <div className="container p-md-5">
+      <div className="row g-5">
+        <div className="col-md-4">
+          <img src={Article1} alt="Women in Energy" className="img-fluid" />
+        </div>
+        <div className="col-md-4">
+          <img src={Article2} alt="Memorandum of understanding" className="img-fluid" />
+        </div>
+        <div className="col-md-4">
+          <img src={Article3} alt="Earth month" className="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <div className="text-center p-5">
+      <button className="btn text-light" style={{backgroundColor: "blue"}}><Link to='/article' className="text-decoration-none text-light">View more articles</Link></button>
+    </div>
+    {/* <div className="container d-flex justify-content-center p-md-5">
       <div className="container">
         <div className="row gy-5">
           <div className="col-lg-6 d-flex align-items-center">
-            <h1>Featured Articles</h1>
+            <h1 className="pt-3">Featured Articles</h1>
           </div>
           
           <div className="col-lg-6 d-flex align-items-center carousel-lead">
@@ -63,7 +82,7 @@ const Table = ({ table }) => (
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
   </>
 );
 

@@ -2,30 +2,21 @@
     overflow: hidden;
     margin: 0 auto;
     padding: 0 auto;
-    font-family: "Arial Black" !important;
+    font-family: "Arial" !important;
     height: fit-content;
+    /* position: fixed;
+    z-index: 1; */
   }
-  .account img {
-    height: 3rem;
-    mix-blend-mode: lighten;
-    transform: scaleX(-1)
-  }
+  
   .Navbar .signIn {
     width: fit-content;
   }
   .Navbar .col {
     height: fit-content;
   }
-  
-  /* .Navbar .logo {
-    background-image: url(./img/LOGO_WAVE2.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #49495B;
-    height: 8rem
-  } */
+
   .Navbar .navbar {
-    background-color: #112886;
+    background-color: #f4f4f4
   }
   .Navbar li {
     padding-right: 10px;
@@ -33,15 +24,12 @@
   .Navbar li > a {
     font-size: 1rem;
     text-decoration: none;
-    color: #fff !important;
+    color: #000 !important;
 
   }
   .Navbar .active {
-    color: yellow !important;
+    color: blue !important;
   }
-  /* .Navbar .active {
-    color: #49495B;
-  } */
 
   .Navbar .navbar-dark .navbar-nav .nav-link {
     color: black;
@@ -54,9 +42,7 @@
     text-align: justify;
   }
   .Navbar .wave-logo {
-    /* z-index: 1; */
-    transform: scaleX(-1);
-    /* margin-right: 10px; */
+    height: 2rem;
   }
 /* 
 @media (min-width: 992px) {

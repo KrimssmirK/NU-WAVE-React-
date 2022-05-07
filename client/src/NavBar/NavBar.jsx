@@ -92,12 +92,6 @@ class NavBar extends Component {
                       <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">New</NavLink></li>
                     </ul>
                   </li>
-                  <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}to="/about">About</NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}to="/contact">Contact</NavLink>
-                  </li>
                   <li className="nav-item dropdown">
                     <NavLink 
                       className={({isActive}) => (isActive ? "nav-link active dropdown-toggle" : "nav-link dropdown-toggle")} 
@@ -113,6 +107,13 @@ class NavBar extends Component {
                       <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">Incubation</NavLink></li>
                     </ul>
                   </li>
+                  <li className="nav-item">
+                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}to="/about">About</NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink className={({isActive}) => (isActive ? "nav-link active" : "nav-link")}to="/contact">Contact</NavLink>
+                  </li>
+                 
                 </ul>
                 <div className="signIn d-flex" style={{color: 'black'}}>
                   {/* <button className="btn rounded-pill border-white text-light" style={{color: 'black', zIndex: 1}}>Sign up</button> */}

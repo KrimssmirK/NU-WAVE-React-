@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import './Home.css'
 import banner from './img/creative-banner.png'
 
@@ -19,6 +20,9 @@ import FeatInnovator from './components/featured_innovator'
 
 
 export default function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <div className="Home">
             <div className="hero">

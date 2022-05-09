@@ -21,6 +21,12 @@
 .Footer .credits img {
   max-height: 5rem;
 }
+.Footer .footer-text {
+  font-size: .7em;
+}
+.Footer .content li {
+  font-size: .7em;
+}
 
 
 

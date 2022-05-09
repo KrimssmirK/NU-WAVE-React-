@@ -15,6 +15,8 @@ import Contact from './Contact/Contact'
 
 import Article from './Article/Container'
 
+import ComingSoon from './Coming_Soon'
+
 const Content = () => (
   <div className='Content' style={{overflow: 'hidden'}}>
     <Routes>
@@ -26,6 +28,7 @@ const Content = () => (
       <Route exact path='/article' element={<Article />} />
       <Route exact path='/about' element={<About />} /> 
       <Route exact path='/contact' element={<Contact />} />
+      <Route exact path='/Coming_Soon' element={<ComingSoon />} />
     </Routes>
   </div>
 )

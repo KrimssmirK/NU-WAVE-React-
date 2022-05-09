@@ -6,19 +6,19 @@ const QuickLinks = () => (
     <div className="d-flex justify-content-center">
       <div>
         <div className="title">
-          <h1 className="h5" style={{ color: "black" }}>
+          <h6>
             Labs
-          </h1>
+          </h6>
         </div>
         <div className="content px-3">
           <ul style={{ listStyleType: "none", padding: 0 }}>
             <li>
-              <Link to="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link to="/Coming_Soon" style={{ color: "black", textDecoration: "none" }}>
                 Innovation
               </Link>
             </li>
             <li>
-              <Link to="#" style={{ color: "black", textDecoration: "none" }}>
+              <Link to="/Coming_Soon" style={{ color: "black", textDecoration: "none" }}>
                 Incubation
               </Link>
             </li>

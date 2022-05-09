@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import MainArticle from './MainArticle'
 import SubArticle from './SubArticle'
 import Item from './Item'
@@ -9,8 +10,13 @@ import Button from './Button'
 //   {title: 'kenji'},
 //   {title: 'parayno'}
 // ]
-const Container = () => (
-  <div className='Container m-2 p-2'>
+function Container() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  return (
+    <div className='Container m-2 p-2'>
     <h1 className='text-center' style={{fontSize: 5 + 'vw'}}>Articles</h1>
     <hr/>
     <div className='main'>
@@ -20,7 +26,7 @@ const Container = () => (
     <div className='sub'>
       <div className='d-flex justify-content-center'>
         <SubArticle />
-        <SubArticle style='border-start border-end'/>
+        <SubArticle class='border-start border-end'/>
         <SubArticle />
       </div>
     </div>
@@ -41,6 +47,7 @@ const Container = () => (
       <Button />
     </div>
   </div>
-)
+  ) 
+}
 
 export default Container

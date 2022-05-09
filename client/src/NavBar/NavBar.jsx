@@ -12,6 +12,7 @@ class NavBar extends Component {
   
   render() {
     // const cartColor = { color: '#35408E' }
+    
     return (
       <div className="Navbar container-fluid px-0 pb-5">
         <nav className="navbar navbar-expand-lg navbar-light navbar-fixed fixed-top">
@@ -35,13 +36,13 @@ class NavBar extends Component {
                       role="button" 
                       data-bs-toggle="dropdown" 
                       aria-expanded="false" 
-                      to="/about">
+                      to="/C">
                       Articles
                     </NavLink>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/article">All articles</NavLink></li>
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">Featured</NavLink></li>
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">Latest</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to='/Coming_Soon'>Featured</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Latest</NavLink></li>
                     </ul>
                   </li>
                   
@@ -52,14 +53,14 @@ class NavBar extends Component {
                       role="button" 
                       data-bs-toggle="dropdown" 
                       aria-expanded="false" 
-                      to="/about">
+                      to="/Co">
                      Exhibit
                     </NavLink>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/exhibits">All exhibit</NavLink></li>
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">Recent</NavLink></li>
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">Upcoming</NavLink></li>
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">Gallery</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Recent</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Upcoming</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Gallery</NavLink></li>
                     </ul>
                   </li>
                   <li className="nav-item dropdown">
@@ -73,8 +74,8 @@ class NavBar extends Component {
                      Innovators
                     </NavLink>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">Featured</NavLink></li>
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">Newest</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Featured</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Newest</NavLink></li>
                     </ul>
                   </li>
                   <li className="nav-item dropdown">
@@ -88,8 +89,8 @@ class NavBar extends Component {
                       Products
                     </NavLink>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">Categories</NavLink></li>
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">New</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Categories</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">New</NavLink></li>
                     </ul>
                   </li>
                   <li className="nav-item dropdown">
@@ -103,8 +104,8 @@ class NavBar extends Component {
                      Labs
                     </NavLink>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">Innovaiton</NavLink></li>
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/">Incubation</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Innovation</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Incubation</NavLink></li>
                     </ul>
                   </li>
                   <li className="nav-item">

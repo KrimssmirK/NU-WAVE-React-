@@ -6,13 +6,17 @@ const QuickLinks = () => (
     <div className="d-flex justify-content-center">
       <div>
         <div className="title">
-          <h1 className="h5" style={{ color: "black" }}>
+          <h6>
             Connect
-          </h1>
+          </h6>
         </div>
-        <div className="content d-flex justify-content-around px-3">
-          <i className="bi bi-facebook text-primary px-1"></i>
-          <i className="bi bi-messenger px-1" style={{color: "purple"}}></i>
+        <div className="content px-3">
+          <a href="https://facebook.com/NUCentIE" target="_blank" rel="noopener noreferrer">
+            <i className="bi bi-facebook text-primary px-1"></i>   
+          </a>
+          <a className="fb-messenger" href="https://m.me/NUCentIE" target='_blank' rel="noopener noreferrer">
+            <i className="bi bi-messenger px-1" style={{color: "purple"}}></i>
+          </a>
           <i className="bi bi-youtube px-1 text-danger"></i>
           <i className="bi bi-envelope-fill px-1 text-warning"></i>
         </div>

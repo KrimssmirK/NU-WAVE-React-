@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.css'
 import photo1 from './img/photo1.png'
 import photo4 from './img/photo4.png'
 
 
-const About = () => (
+function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  return (
     <div className='About'>
         <section id="centie-info" className="p-md-5 my-5">
     <div className="container">
@@ -50,7 +54,8 @@ const About = () => (
     </div>
   </section>
     </div>
+  )
     
-)
+}
 
 export default About

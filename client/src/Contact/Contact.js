@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Contact.css'
 
-const Contact = () => (
+function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+  return (
     <div className='Contact'>
       <section className="pb-5">
         <div className="container-fluid px-0 exhibits-banner bg-dark">
@@ -88,6 +92,7 @@ const Contact = () => (
         </div>
       </div>
     </div>
-)
+  )
+}
 
 export default Contact

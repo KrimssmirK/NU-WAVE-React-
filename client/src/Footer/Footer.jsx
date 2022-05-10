@@ -20,14 +20,15 @@ function Footer() {
 
   return (
     <div className="Footer container-fluid px-0">
-      <div className="d-md-flex border border-2 border-bottom">
+      <div className="container">
+      <div className="d-md-flex border-2 border-bottom">
         <div
           style={{ width: "fit-content", height: "fit-content" }}
           className="mx-auto"
         >
           <img src={NUWAVE} alt="nu wave" className="img-fluid" />
         </div>
-        <div className="row gy-5 pt-md-5">
+        <div className="row gy-5 pt-5">
           <div className="col-md-3">
             <Home />
           </div>
@@ -83,6 +84,8 @@ function Footer() {
           </div>
         </div>
       </div>
+      </div>
+      
       {/* <div className="row gy-3 pt-5 text-center">
       <div className="col-md-4 d-flex">
         <img src={wizard} alt="..." className="img-fluid"/>

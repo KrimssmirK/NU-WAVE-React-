@@ -4,6 +4,7 @@
   object-fit: center; */
   /* height: 36vh; */
   /* background-size: cover; */
+  font-family: "Arial" !important;
   background-color: #f4f4f4;    
 }
 .Footer .col-md-4 {

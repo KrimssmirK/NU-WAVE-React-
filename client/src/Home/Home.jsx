@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import './Home.css'
-import banner from './img/creative-banner.png'
+import banner from './img/banner-nu-manila.webp'
 
 import Table from './table'
 import FeaturedP from './feautredProduct.jsx'

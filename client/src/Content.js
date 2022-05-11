@@ -7,7 +7,7 @@ import ExhibitsContainer from './Exhibits/ExhibitsContainer'
 import ExhibitContainer from './Exhibits/Exhibit/ExhibitContainer'
 import ProductContainer from './Exhibits/Exhibit/Product/ProductContainer'
 
-import Gallery from './Gallery/Gallery'
+import FeatInnovator from './Innovator/featured_innovators'
 
 import About from './About/About'
 
@@ -23,8 +23,8 @@ const Content = () => (
       <Route exact path='/' element={<Home />} />
       <Route exact path='/exhibits' element={<ExhibitsContainer />} /> 
       <Route exact path='/exhibit/:exhibitID' element={<ExhibitContainer />} />
+      <Route exact path='/featured_innovators' element={<FeatInnovator />} /> 
       <Route exact path='/product/:productID' element={<ProductContainer />} />
-      <Route exact path='/gallery' element={<Gallery />} /> 
       <Route exact path='/article' element={<Article />} />
       <Route exact path='/about' element={<About />} /> 
       <Route exact path='/contact' element={<Contact />} />

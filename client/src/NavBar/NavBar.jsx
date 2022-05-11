@@ -74,7 +74,7 @@ class NavBar extends Component {
                      Innovators
                     </NavLink>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Featured</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/featured_innovators">Featured</NavLink></li>
                       <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Newest</NavLink></li>
                     </ul>
                   </li>

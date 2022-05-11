@@ -12,6 +12,11 @@ const QuickLinks = () => (
         </div>
         <div className="content px-3">
           <ul style={{ listStyleType: "none", padding: 0 }}>
+          <li>
+              <Link to="/products" style={{ color: "black", textDecoration: "none" }}>
+                All products
+              </Link>
+            </li>
             <li>
               <Link to="/Coming_Soon" style={{ color: "black", textDecoration: "none" }}>
                 Categories

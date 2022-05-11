@@ -85,10 +85,11 @@ class NavBar extends Component {
                       role="button" 
                       data-bs-toggle="dropdown" 
                       aria-expanded="false" 
-                      to="/products">
+                      to="/pro">
                       Products
                     </NavLink>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/products">All products</NavLink></li>
                       <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Categories</NavLink></li>
                       <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">New</NavLink></li>
                     </ul>

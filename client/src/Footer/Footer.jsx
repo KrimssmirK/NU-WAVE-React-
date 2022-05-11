@@ -27,6 +27,15 @@ function Footer() {
           className="mx-auto"
         >
           <img src={NUWAVE} alt="nu wave" className="img-fluid" />
+          <div className="contact ps-2">
+            <div className="pb-2">
+              <i className="bi bi-geo-alt"></i><span> 551 M.F. Jhocson St. Sampaloc, Manila, PH 1008</span>
+            </div>
+            <div>
+              <i className="bi bi-telephone"></i><span> +632 8712-1900</span>
+            </div>
+          </div>
+          
         </div>
         <div className="row gy-5 pt-5">
           <div className="col-md-3">

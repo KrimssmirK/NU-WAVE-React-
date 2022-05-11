@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './Home.css'
 import banner from './img/banner-nu-manila.webp'
 
@@ -36,14 +37,14 @@ export default function Home() {
             {/* <img src={waved} alt="" className="img-fluid banner"/> */}
             <section className="container pt-5">
                 <h1>Featured Articles</h1>
-                <p className="p-2">
+                <p className="p-md-2">
                 This is what we are up to. Be updated on what's new on our projects, activities and achievements.
                 </p>
                 <Table />
             </section>
             <section className="container" style={{marginTop: 10 +'%', marginBottom: 5 + '%'}}>
                 <h1>Featured Products</h1>
-                <p className="p-2">
+                <p className="p-md-2">
                 Ideas, Innovations, Inventions, Creations....
                 <br />
                 Browse through and take interest in the fruits of our innovator's relentless efforts to compete in the modern world.
@@ -51,24 +52,29 @@ export default function Home() {
                 <FeaturedP />
             </section>
             <section className='container py-5'>
-                <div className="container">
+                <div className="">
                     <div className="row g-5">
                         <div className="col-md-5">
                             <div className="mx-auto">
                                 <h1>Featured Innovator</h1>
-                                <p className="p-2">
+                                <p className="p-md-2">
                                     Meet and get to know one of the innovators that had contributed greatly to make NU WAVE a tsunami.
                                 </p>
                             </div>
                             
                         </div>
                         <div className="col-md-7">
-                            <FeatInnovator />
+                            <div className="container">
+                                <FeatInnovator />
+
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className="text-center p-5">
-                    <button className="btn text-light" style={{backgroundColor: 'blue'}}>View more innovators</button>
+                    <Link to="/featured_innovators">
+                        <button className="btn text-light" style={{backgroundColor: 'blue'}}>View more innovators</button>
+                    </Link>
                 </div>
                    
             </section>

@@ -28,6 +28,9 @@
 .Footer .content li {
   font-size: .7em;
 }
+.Footer .contact > i, span {
+  font-size: .6em;
+}
 
 
 

@@ -13,7 +13,7 @@ const QuickLinks = () => (
         <div className="content px-3">
           <ul style={{ listStyleType: "none", padding: 0 }}>
             <li>
-              <Link to="/Coming_Soon" style={{ color: "black", textDecoration: "none" }}>
+              <Link to="/featured_innovators" style={{ color: "black", textDecoration: "none" }}>
                 Featured
               </Link>
             </li>

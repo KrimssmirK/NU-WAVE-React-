@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 import prod1 from './img/prod-7.png'
 import prod2 from './img/prod-5.png'
 import prod3 from './img/prod-4.png'
@@ -38,7 +38,9 @@ const FeaturedP = ({ FeaturedP }) => (
              </div>
         </div>
         <div className="p-5 text-center">
-            <button className="btn text-light" style={{backgroundColor: 'blue'}}>View more products</button>
+            <Link to='/products'>
+                <button className="btn text-light" style={{backgroundColor: 'blue'}}>View more products</button>
+            </Link>
         </div>
     </div>
 )

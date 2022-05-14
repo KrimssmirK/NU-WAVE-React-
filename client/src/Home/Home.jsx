@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './Home.css'
 import banner from './img/banner-nu-manila.webp'
 
+import CarouselItem from './components/carousel_item'
 import Table from './table'
 import FeaturedP from './feautredProduct.jsx'
 import FeatInnovator from './components/featured_innovator'
@@ -27,12 +28,32 @@ export default function Home() {
     return (
         <div className="Home">
             <div className="hero">
-                <img src={banner} alt="creative and technology"  className='img-fluid'/>
+                {/* <img src={banner} alt="creative and technology"  className='img-fluid'/> */}
                 {/* <div className="container p-md-5">
                     <h1 className="textH">
                         Creative + Technology
                     </h1>
                 </div>   */}
+                <section className="pb-5">
+                <div id="centie_carousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div className="carousel-indicators">
+                        <button type="button" data-bs-target="#centie_carousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#centie_carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#centie_carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div className="carousel-inner">
+                        <CarouselItem />
+                    </div>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#centie_carousel" data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Previous</span>
+                    </button>
+                        <button className="carousel-control-next" type="button" data-bs-target="#centie_carousel" data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
             </div>
             {/* <img src={waved} alt="" className="img-fluid banner"/> */}
             <section className="container pt-5">

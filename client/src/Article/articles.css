@@ -1,3 +1,7 @@
 .Container {
     font-family: "Arial" !important;
+    background-color: red !important;
+}
+.Container .fb-page {
+    width: 100% !important;
 }

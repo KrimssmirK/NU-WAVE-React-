@@ -8,7 +8,9 @@ class NavBar extends Component {
   
   handleClickSignInSignUpCart = () => {
     alert('The feature will be available soon')
+  
   }
+  
   
   render() {
     // const cartColor = { color: '#35408E' }
@@ -40,7 +42,7 @@ class NavBar extends Component {
                       Articles
                     </NavLink>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/article">All articles</NavLink></li>
+                      <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/article" onClick={() => window.location.replace("./article")}>All articles</NavLink></li>
                       <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to='/Coming_Soon'>Featured</NavLink></li>
                       <li><NavLink className={({isActive}) => (isActive ? "dropdown-item bg-light active" : "dropdown-item bg-light")} to="/Coming_Soon">Latest</NavLink></li>
                     </ul>

@@ -12,6 +12,7 @@ export default function UnderConstruction() {
           <h1>This page is under construction.</h1>
         </div>
       </div>
+     
     </div>
   )
 }
